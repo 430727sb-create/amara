@@ -1,0 +1,603 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="nl" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Amara Home &amp; Café | Haute Concierge &amp; Hotspot Wateringen</title>
+<meta content="Serene ontmoetingsplek op het Plein in Wateringen. Specialty coffee, all-day brunch, viraal fruitgebak, luxe High Tea en een interieur waarin elk fysiek item ter plekke te koop is." name="description">
+<!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'amara-cream': '#FDF9F3',
+            'amara-ivory': '#F8F4EE',
+            'amara-sage': '#7E927A',
+            'amara-sage-dark': '#4E614B',
+            'amara-sage-light': '#E9EFE8',
+            'amara-bronze': '#2C221D',
+            'amara-bronze-soft': '#43342C',
+            'amara-gold': '#C8A97E',
+            'amara-gold-light': '#F5EBDD',
+            'amara-gold-border': '#D8BA91',
+            'amara-sand': '#EAE2D7',
+            'champagne': '#F7F2E9',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          },
+          boxShadow: {
+            'glass': '0 8px 32px 0 rgba(44, 34, 29, 0.08)',
+            'gold-glow': '0 0 25px rgba(200, 169, 126, 0.35)',
+            'dock': '0 20px 45px -10px rgba(44, 34, 29, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FDF9F3;
+      color: #2C221D;
+    }
+    h1, h2, h3, h4, .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .frosted-glass {
+      background: rgba(253, 249, 243, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(216, 186, 145, 0.4);
+    }
+    .frosted-dark {
+      background: rgba(44, 34, 29, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(200, 169, 126, 0.35);
+    }
+    .shimmer-text {
+      background: linear-gradient(120deg, #2C221D 20%, #C8A97E 50%, #2C221D 80%);
+      background-size: 200% auto;
+      color: #2C221D;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 6s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(200, 169, 126, 0.7); }
+      70% { transform: scale(1.1); box-shadow: 0 0 0 12px rgba(200, 169, 126, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(200, 169, 126, 0); }
+    }
+    .hotspot-pulse {
+      animation: pulse-ring 2.4s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    }
+    @keyframes haptic-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .animate-haptic {
+      animation: haptic-bounce 2s ease-in-out infinite;
+    }
+  
+/* AMARA interactive additions */
+.amara-cookie{position:fixed;right:22px;bottom:22px;z-index:1000;width:min(390px,calc(100vw - 32px));background:#fffaf4;border:1px solid rgba(184,145,84,.35);border-radius:26px;padding:20px;box-shadow:0 24px 70px rgba(73,50,35,.22);transform:translateY(140%);opacity:0;transition:.65s cubic-bezier(.2,.9,.2,1.15)}.amara-cookie.show{transform:translateY(0);opacity:1}.cookie-emoji{font-size:42px;display:inline-block;animation:cookieWiggle 2.6s ease-in-out infinite}.cookie-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.cookie-btn{border:0;border-radius:999px;padding:10px 14px;font-size:11px;font-weight:800;letter-spacing:.04em;cursor:pointer}.cookie-yes{background:#5b4031;color:white}.cookie-no{background:#efe4d7;color:#5b4031}.crumb{position:fixed;z-index:1100;pointer-events:none;animation:crumbFly .8s ease-out forwards}@keyframes cookieWiggle{0%,100%{transform:rotate(0)}50%{transform:rotate(-8deg) scale(1.05)}}@keyframes crumbFly{to{transform:translate(var(--x),var(--y)) rotate(180deg);opacity:0}}
+.dessert-reveal{position:relative}.dessert-reveal:after{content:"Looks like fruit. Isn't fruit. 👀";position:absolute;inset:auto 14px 14px 14px;background:rgba(72,48,34,.86);color:white;padding:10px 12px;border-radius:14px;font:700 11px/1.2 sans-serif;letter-spacing:.04em;transform:translateY(12px);opacity:0;transition:.3s;pointer-events:none}.dessert-reveal:hover:after{transform:none;opacity:1}
+.receipt-tab{position:fixed;left:18px;bottom:18px;z-index:70;background:#fffaf2;color:#5b4031;border:1px dashed #b88954;border-radius:12px 12px 0 0;padding:9px 13px;font:800 10px/1 sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.receipt{position:fixed;left:18px;bottom:60px;z-index:69;width:245px;background:#fffdf8;color:#5b4031;padding:22px;border-radius:8px;box-shadow:0 20px 50px rgba(73,50,35,.2);font-family:monospace;transform:translateY(30px) scale(.96);opacity:0;pointer-events:none;transition:.35s}.receipt.show{transform:none;opacity:1;pointer-events:auto}.receipt hr{border:0;border-top:1px dashed #b88954;margin:12px 0}@media(max-width:700px){.amara-cookie{left:16px;right:16px;bottom:16px;width:auto}.receipt-tab{bottom:82px}}
+</style>
+<script>
+    function switchExperience(tabId) {
+      const tabs = ['tab-brunch', 'tab-hightea', 'tab-interior'];
+      const contents = ['exp-brunch', 'exp-hightea', 'exp-interior'];
+      
+      tabs.forEach(t => {
+        const btn = document.getElementById(t);
+        if (t === tabId) {
+          btn.classList.add('bg-amara-bronze', 'text-white', 'shadow-md', 'border-amara-gold');
+          btn.classList.remove('bg-white/60', 'text-amara-bronze', 'border-transparent');
+        } else {
+          btn.classList.remove('bg-amara-bronze', 'text-white', 'shadow-md', 'border-amara-gold');
+          btn.classList.add('bg-white/60', 'text-amara-bronze', 'border-transparent');
+        }
+      });
+
+      contents.forEach(c => {
+        const pane = document.getElementById(c);
+        if (c === tabId.replace('tab-', 'exp-')) {
+          pane.classList.remove('hidden');
+          pane.classList.add('grid');
+        } else {
+          pane.classList.add('hidden');
+          pane.classList.remove('grid');
+        }
+      });
+    }
+  </script>
+</head>
+<body class="bg-amara-cream text-amara-bronze antialiased selection:bg-amara-gold/30 selection:text-amara-bronze">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-40 frosted-glass border-b border-amara-gold-border/30 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20 md:h-24">
+<!-- Left: Brand Identity with Logo -->
+<a class="flex items-center gap-3.5 group" data-purpose="brand-logo-link" href="#">
+<div class="relative">
+<img alt="Amara Home &amp; Café Logo" class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-amara-gold/60 shadow-sm group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOINKcbthcLt5707YMMsYpUQseRbQqe1NVFYgyBVJ1x6XY-EoTsYh0ntotknv5mQtBWQiz6rvVVj-UzzK5M1fTHLiccSB7boInyRjJ-jGS9bcWOZXM9qfK3QRfOUjDocryri6MX3bucf31JU5ID1Zf8fLLqDJlB9Lio95uTNll5w39PYFFiFFWiXAua6tv9Tx7cKeWA1BHKoz3DBDTxpkJ7iIVxI40SkkbroM7Qu4a3GtI8ZSWILOc8aQtcKd4IfHwzQ">
+<span class="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
+</div>
+<div class="flex flex-col"><div class="flex items-center gap-2"></div></div>
+</a>
+<!-- Center: Primary Anchor Links -->
+<nav aria-label="Hoofdnavigatie" class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-amara-bronze-soft"><a class="hover:text-amara-bronze hover:border-b-2 hover:border-amara-gold pb-1 transition-all" href="#experience">Concept &amp; Menu</a><a class="hover:text-amara-bronze hover:border-b-2 hover:border-amara-gold pb-1 transition-all" href="#concept">In-Store Collectie</a><a class="hover:text-amara-bronze hover:border-b-2 hover:border-amara-gold pb-1 transition-all" href="#reviews">Google Ervaringen</a><a class="hover:text-amara-bronze hover:border-b-2 hover:border-amara-gold pb-1 transition-all" href="#locatie">Gastvrijheid &amp; Route</a><a class="hover:text-amara-bronze hover:border-b-2 hover:border-amara-gold pb-1 transition-all" href="#socials">Socials &amp; Sfeer</a></nav>
+<!-- Right: Status Badge & Direct Call Action -->
+<div class="flex items-center gap-3">
+<div id="openingStatusBadge" class="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 text-amara-bronze text-xs font-semibold tracking-wide border border-amara-gold-border/40 shadow-xs flex-shrink-0"><span id="openingStatusDot" class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0"></span><span id="openingStatusText" class="inline-flex items-center gap-1">Openingstijden laden…</span></div>
+<a class="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 text-xs font-bold tracking-widest uppercase text-white bg-amara-bronze hover:bg-amara-bronze-soft transition-all duration-300 rounded-full shadow-md border border-amara-gold/40 hover:shadow-gold-glow flex-shrink-0" href="tel:0610195065"><span class="material-symbols-outlined text-sm text-amara-gold flex-shrink-0">call</span><span class="inline">06 10195065</span></a>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative overflow-hidden pt-10 pb-20 md:pt-16 md:pb-28" data-purpose="hero-section" id="over">
+<!-- Subtle metallic gradient orbs -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-[850px] h-[550px] bg-gradient-to-b from-amara-gold/15 via-amara-sand/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-10 right-10 w-96 h-96 bg-amara-sage/10 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Social Proof & Review Tickers Top -->
+<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-8 text-xs font-semibold">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full frosted-glass border border-amara-gold-border/50 text-amara-bronze shadow-xs">
+<span class="text-amber-500 text-sm">★ ★ ★ ★ ★</span>
+<span class="font-bold">4.7 / 5.0</span>
+<span class="text-amara-bronze-soft font-normal">| Westland's favoriete hotspot</span>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full frosted-glass border border-amara-gold-border/50 text-amara-bronze shadow-xs">
+<span class="material-symbols-outlined text-sm text-amara-gold">verified</span>
+<span class="font-bold">&gt; 200+ Google Reviews</span>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-xs"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span><span class="font-medium">100% Vrije Inloop • Direct Bellen: 06 10195065</span></div>
+</div>
+<!-- Hero Title Content -->
+<div class="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+<div class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-amara-bronze text-amara-gold text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm border border-amara-gold/40">
+<span class="">Plein 31A • Wateringen&nbsp;</span>
+</div>
+<h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.1] text-amara-bronze mb-6">
+    Waar Barista Ambacht, Viraal Genot &amp; <br class="hidden sm:inline"><span class="italic font-light shimmer-text">Exclusief Design</span> Samensmelten.
+</h1>
+<p class="text-base sm:text-xl text-amara-bronze-soft font-light leading-relaxed max-w-3xl mx-auto mb-8">Geen stijve formulieren of digitaal gedoe. Schuif spontaan aan voor all-day brunch en viraal fruitgebak, of bel ons direct op het Plein voor reserveringen en speciale wensen.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4"><a class="w-full sm:w-auto px-8 py-4 rounded-full bg-amara-bronze text-white text-xs font-bold tracking-widest uppercase hover:bg-amara-bronze-soft transition-all duration-300 shadow-lg border border-amara-gold hover:shadow-gold-glow flex items-center justify-center gap-2.5 group" href="tel:0610195065"><span class="material-symbols-outlined text-base text-amara-gold group-hover:scale-110 transition-transform">call</span><span class="">Bel Direct: 06 10195065</span></a><a class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/90 text-amara-bronze border border-amara-gold-border hover:bg-amara-gold-light transition-all duration-300 text-xs font-bold tracking-widest uppercase shadow-sm flex items-center justify-center gap-2" href="#concept"><span class="material-symbols-outlined text-base text-amara-sage-dark">storefront</span><span class="">Ontdek In-Store Collectie</span></a></div>
+</div>
+<!-- Visual Bento Showcase -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 items-stretch" data-purpose="hero-gallery-bento">
+<!-- Large Showcase Image: Evening Facade on Plein 31A -->
+<div class="md:col-span-5 relative group overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/40 h-[380px] md:h-[500px]">
+<img alt="Avonduitstraling van Amara Home en Cafe aan Plein 31A Wateringen" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYKYwhzIgS5HyiKgU2yPBoUTn2H7ZZQWG_f5sJQ5Oz0MJq8FuV_DK-V3p9xDGouDTSiFbNfAwkk8h5TjyFTy1MkMQFHeLhyaMdCXFD8Jd7V9UQjOFCjvXD4N608rFCoB1I21-emEu_SZMS_yIRKOpidevCcA9SighOd3fliZKs1YsyHgs9Yxln7is0sBlzY3hYwbQam0wmwfJSyInI1Kcm9mnYoLln1q_7ZaICbtJyn8LJ-0YLKOhYujZfZSPFTudalg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent flex flex-col justify-end p-6 md:p-8 text-white">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="text-xs uppercase tracking-widest text-amara-gold font-bold">Plein 31A • Wateringen</span>
+</div>
+<p class="font-serif text-2xl md:text-3xl font-light">Warm welkom van 's ochtends vroeg tot 's avonds laat.</p>
+<span class="text-xs text-white/80 mt-1">Spontane inloop altijd van harte welkom.</span>
+</div>
+</div>
+<!-- Center Showcase Image: The Bar Counter with illuminated pastries -->
+<div class="md:col-span-4 relative group overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/40 h-[380px] md:h-[500px]">
+<img alt="De bar met geribbeld hout en verlichte patisserie vitrine bij Amara" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeBz0x6VdpnWooMJ1poOfOs6yzbNdNorOZSbtb93iv54Q9fTodvPcMtk4b70MQwRz2sskd0xl-smawHDEKQ4_afMPWbVgeXpkwBNVIOMH8E0HitYdlDTYAtDoKvaX-TjqIMdmr5zpQ2-Hnw9NInDpCvaAKWtZ2B04W2ZwkXr3Xt12m3qp1wMrdLnpUZ5BbHBSK6tcvxDuZt3Av1MIyudi1HAprFdkWe3oZkukNHzGAkNMDVTfJsOVIq2qc2W53uqpIQA">
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-8 text-white">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="text-xs uppercase tracking-widest text-amara-gold font-bold">De Bar &amp; Vitrine</span>
+</div>
+<p class="font-serif text-2xl md:text-3xl font-light">Verse patisserie en specialty drinks.</p>
+<span class="text-xs text-white/80 mt-1">Elk item in de vitrine dagvers gecreëerd.</span>
+</div>
+</div>
+<!-- Right Showcase Image: Fresh Burrata Sourdough -->
+<div class="md:col-span-3 relative group overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/40 h-[380px] md:h-[500px]">
+<img alt="Burrata sandwich met granaatappel en verse pesto" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2LM02jhveY-jvIOZ-eBnBjknxzNJcNhup529pOSrPh_XBglAc4jqiB0I43nGdc0FERI4YIflnm3ywVsrt6qq9MRmIC-fJeYo4LZ0Lj5zYPcVzDzrtCUvUAX_MtmvMpV-1Qpn83Zxt3FKQCijgdCjkTuSu8JElm3hfhvyDh9b3Mi0RzBLjX6Qh0CJU02ARN3iaur_0OFSL6lzpTa4_tVhDnNEncy-0WEzmuEqeiLcfl2WITsLXe_ey-b2hm2vjvXRbUQ">
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-8 text-white">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-amber-400"></span>
+<span class="text-xs uppercase tracking-widest text-amara-gold font-bold">All-Day Brunch</span>
+</div>
+<p class="font-serif text-2xl md:text-3xl font-light">Rijkelijk belegd &amp; dagvers.</p>
+<span class="text-xs text-white/80 mt-1">Luxe smaakexplosies op zuurdesem.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: Interactive Experience Selector -->
+<section class="py-16 md:py-24 bg-white/70 border-y border-amara-gold-border/30 relative" id="experience">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="inline-block px-4 py-1 rounded-full bg-amara-gold/15 text-amara-bronze text-xs font-bold tracking-widest uppercase mb-3 border border-amara-gold-border/50">
+  Interactieve Selector
+</span>
+<h2 class="font-serif text-3xl sm:text-5xl text-amara-bronze font-normal">Kies Jouw Amara Beleving</h2>
+<p class="text-amara-bronze-soft text-sm sm:text-base mt-2">Schakel soepel tussen onze drie pijlers en ontdek wat jou te wachten staat.</p>
+</div>
+<!-- Tab Buttons -->
+<div class="flex items-center justify-center gap-2 sm:gap-4 max-w-2xl mx-auto mb-12 p-1.5 rounded-full bg-amara-sand/50 border border-amara-gold-border/50">
+<button class="flex-1 py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 border bg-amara-bronze text-white shadow-md border-amara-gold" id="tab-brunch" onclick="switchExperience('tab-brunch')">
+  ☕ Brunch &amp; Kaart
+</button>
+<button class="flex-1 py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 border hover:bg-white bg-white/60 text-amara-bronze border-transparent" id="tab-hightea" onclick="switchExperience('tab-hightea')">🫖 High Tea &amp; Groepen</button>
+<button class="flex-1 py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 border hover:bg-white bg-white/60 text-amara-bronze border-transparent" id="tab-interior" onclick="switchExperience('tab-interior')">
+  🏺 Fysiek Meenemen
+</button>
+</div>
+<!-- Pane 1: Brunch & Kaart -->
+<div class="grid-cols-1 lg:grid-cols-12 gap-8 items-center transition-all duration-500 grid" id="exp-brunch">
+<div class="lg:col-span-6 space-y-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amara-sage-light text-amara-sage-dark text-xs font-bold uppercase">
+  Signature All-Day Menu
+</div>
+<h3 class="font-serif text-3xl sm:text-4xl text-amara-bronze">Van Ceremoniële Matcha tot Rijk Zuurdesem</h3>
+<p class="text-amara-bronze-soft font-light text-base leading-relaxed">
+  Of je nu aanschuift voor een snelle flat white van vers gebrande bonen, een matcha latte met ceremoniële kwaliteit, of een uitgebreide brunch met romige buffelburrata: bij Amara staat pure esthetiek en hoogwaardige ingrediënten centraal.
+</p>
+<div class="grid grid-cols-2 gap-4 pt-2">
+<div class="p-4 rounded-2xl bg-white border border-amara-gold-border/40 shadow-xs">
+<div class="font-serif text-2xl text-amara-bronze font-bold">100%</div>
+<div class="text-xs text-amara-bronze-soft">Huisgemaakte toppings &amp; dagverse broden</div>
+</div>
+<div class="p-4 rounded-2xl bg-white border border-amara-gold-border/40 shadow-xs">
+<div class="font-serif text-2xl text-amara-gold font-bold">Uji Japan</div>
+<div class="text-xs text-amara-bronze-soft">Originele ceremoniële matcha bar</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amara-bronze text-white text-xs font-bold uppercase tracking-widest hover:bg-amara-bronze-soft" href="#menu">
+<span class="">Bekijk Volledige Kaart</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6 grid grid-cols-2 gap-4">
+<div class="overflow-hidden rounded-2xl shadow-lg border border-amara-gold-border/40 h-72">
+<img alt="Brunch spread met rijk belegde sandwiches en koffie bij Amara" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBViUZ1Al-fWWO6i5Mtny-C9wmiXt6xcd6e4kxxAT3l9qswNiuy_DZaHgP-FPag41Dyybx8QvOLklNlewNmK1V-C6ltqGUxfxchL2YbMquO97i6NnwCPemvpRin9u7lGI5sIgaiHuwDRyNASTPckGdar77n3tIdcsXgF1aBaeH4BVz9GPFSLbvmYTooTvbwGqnODrqwoU1_BoeNGOitZfvgWuMHseX0X_A3t3Q4cP_-G1ARBw1hGjMN8J4QDyHLP-qXjg">
+</div>
+<div class="overflow-hidden rounded-2xl shadow-lg border border-amara-gold-border/40 h-72">
+<img alt="Viral Trompe-l'oeil Fruitgebak in vitrine" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU5MiuC17_ZGf0fR1ashuiAPKRH945jBRlhNYFSrzg-mejwFY75760WHw5f-GXMURdsCMERekC_qggaFpk0TIdQNYGf95ZSHXbVtCHYK-xFRcm-kpBPgXdgcMo-Yd7yJvYyyKBV6DSNX3fMpym2HzS9RmAX5RAie0tS55cQnd7M3ImpP_ATmXhO3WtvmML45dfENIBuDDPiOVAJNuKO9jL7orOsgGt80WqhevwY2PNIjUNSxtcrKSygTIjuv5EOFLEjQ">
+</div>
+</div>
+</div>
+<!-- Pane 2: High Tea & VIP -->
+<div class="grid-cols-1 lg:grid-cols-12 gap-8 items-center transition-all duration-500 hidden" id="exp-hightea">
+<div class="lg:col-span-6 space-y-5"><div class="space-y-5"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amara-gold/20 text-amara-bronze text-xs font-bold uppercase">Luxe Arrangement &amp; Besloten Events</div><h3 class="font-serif text-3xl sm:text-4xl text-amara-bronze">Vier Jouw Moment in Gouden Stijl</h3><p class="text-amara-bronze-soft font-light text-base leading-relaxed">Babyshowers, bridal tea parties of verjaardagen met de allerbelangrijkste mensen om je heen. Onze etagères vol hartige mini-sandwiches, warm gebakken scones en verfijnde Franse macarons maken elk moment memorabel.</p><div class="p-4 rounded-2xl bg-white border border-amara-gold-border/40 space-y-2"><div class="flex justify-between items-center text-sm font-bold text-amara-bronze"><span class="">High Tea Arrangement</span><span class="text-amara-gold font-serif text-xl">€ 29,50 p.p.</span></div><p class="text-xs text-amara-bronze-soft">Inclusief onbeperkt theemelanges &amp; feestelijk gestylede tafels met zijden linnen.</p></div><div class="pt-2"><a class="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-amara-bronze text-white text-xs font-bold uppercase tracking-widest hover:bg-amara-bronze-soft transition-all" href="tel:0610195065"><span class="material-symbols-outlined text-sm text-amara-gold">call</span><span class="">Reserveren via Telefoon: 06 10195065</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></div>
+<div class="lg:col-span-6">
+<div class="overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/40 h-80">
+<img alt="High Tea tafel styling bij Amara" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd872llXKORm6GU_gMyGVO39AAOo2RW25XqH1QoLxwpsVonbod2dcsIzsh60N-oi0Seb7mVGr7SVql2tM-fzGv2pBee1woMWMAvtqB56t62agH7pFDsJYyataWnkkRw3i0sn_yi-FCC7VaVFO_uMJlCOA9iPfIA93s2Wx93-X5bUciWffpakfWhFfk0OACiCuXOnhNg0Q6OUPbU4fqJzKGyB7IItU4MLhMkZtUOwFPIBxuIe2NZfDFCMVY4R2uzqu_QQ">
+</div>
+</div>
+</div>
+<!-- Pane 3: Fysieke Interieurcollectie -->
+<div class="grid-cols-1 lg:grid-cols-12 gap-8 items-center transition-all duration-500 hidden" id="exp-interior">
+<div class="lg:col-span-6 space-y-5">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amara-sand text-amara-bronze text-xs font-bold uppercase">
+  Living Concept Café
+</div>
+<h3 class="font-serif text-3xl sm:text-4xl text-amara-bronze">Geen Webshop. Geen Wachttijd. Direct Mee Naar Huis.</h3>
+<p class="text-amara-bronze-soft font-light text-base leading-relaxed">
+  Elke organische vaas, golvende designspiegel, keramieken koffiebeker en warme tafellamp die je in onze zaak ziet staan heeft een discreet prijskaartje. Vraag onze barista aan de toog en neem het direct stijlvol verpakt mee!
+</p>
+<div class="flex items-center gap-3 p-4 rounded-2xl bg-white border border-amara-gold-border/40">
+<span class="material-symbols-outlined text-2xl text-amara-gold">shopping_bag</span>
+<span class="text-xs text-amara-bronze font-medium">Onze barista pakt elk meeneemitem ter plekke met zorg en luxe cadeaustijl voor je in.</span>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amara-bronze text-white text-xs font-bold uppercase tracking-widest hover:bg-amara-bronze-soft" href="#concept">
+<span class="">Bekijk de Hotspot Galerij</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/40 h-80">
+<img alt="Amara Interieur Planken en spiegels" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2JYfUlMn5u2pjQ1u5CFi0AoHs0GyBTxPOyHjnnERD-OZ19hOwCdUIBvlwROgq8GG6tasmY8SKigGnsYyIhPA4IAIqC5XlIwMAaPXMvDY7Z5RsDYrogI_bmwf-eJ0QL1rp91ug9uXFcT4fUNSxeRRiDOvozbry844sC-6B-9cSeP1P7gWhx9gKJZteHCJoNC3A66mIz33uyVBmTwniyciiV5saV_ifhNPqhm95sHReDrunHbPB1hsnMkxz8QYVynzb7A">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Interactive Experience Selector -->
+<!-- BEGIN: ConceptSection With Interactive Shimmer Pins -->
+<section class="py-20 md:py-28 bg-white border-b border-amara-gold-border/30 relative" data-purpose="physical-experience-concept" id="concept">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Visual: In-store illuminated shelves with interactive pins -->
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<div class="relative overflow-hidden rounded-3xl shadow-2xl border-4 border-amara-gold-border/40 group">
+<img alt="In-store verlichte nissen met design vazen en wavy spiegels bij Amara" class="w-full h-[580px] object-cover object-center group-hover:scale-102 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTlVHKBGBtCsnJZZ_K0z9NqaVNQAWGD1JvylNjyKyopFZudQqNKRLQO-5SHeKTrJHVT7meTkElcgHTaLfhMYh3xr4mDVYAjYtraedK6fsh7h0NqteLPysvYAkdDqslcM-I8G6VOj7B_mFcKyCJ_Cb0a577hwE1JZzsrkp2HMiUV-vsUjZT_aZvSw66BkZY2C8cxc5C2dAAtymqtgA8VBIDHIdCHyGTj8WJcgJ_VPnKVcb2AqwmW3TPGGzA9BdkV4yx-Q">
+<!-- Hint banner on image -->
+</div>
+<!-- Floating note card -->
+<div class="absolute -bottom-6 -right-4 sm:-right-6 bg-white p-5 rounded-2xl shadow-xl border border-amara-gold-border/60 max-w-xs">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-amara-gold/20 flex items-center justify-center text-amara-bronze font-serif text-xl font-bold">
+  ✓
+</div>
+<div>
+<h4 class="text-xs font-bold uppercase tracking-wider text-amara-bronze">In-Store</h4>
+<p class="text-xs text-amara-bronze-soft">Geen webshop wachttijd. Direct meenemen vanaf onze planken.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Content: The Philosophy of Living Concept -->
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amara-gold/15 text-amara-bronze text-xs font-bold tracking-widest uppercase mb-4 border border-amara-gold-border/40">
+  De Fysieke Beleving
+</div>
+<h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-amara-bronze font-normal leading-[1.2] mb-6">
+  "Zie je die lamp boven je tafel, of die vaas in de nis? <span class="italic font-light text-amara-bronze shimmer-text">Die neem je gewoon mee naar huis.</span>"
+</h2>
+<div class="space-y-4 text-amara-bronze-soft text-base sm:text-lg leading-relaxed mb-10 font-light">
+<p class="">
+  Amara is <strong>géén webshop met digitale winkelmandjes</strong>, maar een levend concept café. Elk meubelstuk, keramieken vaas, golvende spiegel, interieurgeur en armatuur in onze zaak is met liefde gecureerd en direct ter plekke te koop.
+</p>
+<p class="">
+  Neem ontspannen plaats voor barista-koffie of brunch, laat je zintuigen prikkelen door onze organische styling, en vraag onze barista simpelweg naar het item dat jouw hart heeft gestolen. Wij pakken het met plezier liefdevol voor je in aan de bar.
+</p>
+</div>
+<!-- 3 Simple Steps of the Experience -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-amara-gold-border/40">
+<div class="space-y-2">
+<span class="font-serif text-2xl text-amara-gold font-bold">01.</span>
+<h4 class="font-semibold text-amara-bronze text-sm tracking-wide">Geniet &amp; Ontspan</h4>
+<p class="text-xs text-amara-bronze-soft leading-normal">Kies een fijne tafel en dompel je onder in onze kalme, zachte sfeer.</p>
+</div>
+<div class="space-y-2">
+<span class="font-serif text-2xl text-amara-gold font-bold">02.</span>
+<h4 class="font-semibold text-amara-bronze text-sm tracking-wide">Spot Jouw Favoriet</h4>
+<p class="text-xs text-amara-bronze-soft leading-normal">Bekijk de prijskaartjes aan de vazen, spiegels, serviezen en lampen.</p>
+</div>
+<div class="space-y-2">
+<span class="font-serif text-2xl text-amara-gold font-bold">03.</span>
+<h4 class="font-semibold text-amara-bronze text-sm tracking-wide">Direct Mee Naar Huis</h4>
+<p class="text-xs text-amara-bronze-soft leading-normal">Reken eenvoudig af aan de bar en geef je eigen huis dezelfde serene stijl.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ConceptSection -->
+<!-- BEGIN: MenuHighlightsSection -->
+<section class="py-20 md:py-28 bg-amara-cream relative" data-purpose="menu-highlights" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Title -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="inline-block px-3.5 py-1 rounded-full bg-amara-sand text-amara-bronze text-xs font-semibold tracking-widest uppercase mb-4 border border-amara-gold-border/40">
+  Smaak &amp; Ambacht
+</span>
+<h2 class="font-serif text-3xl sm:text-5xl text-amara-bronze font-normal mb-4">
+  Uit Onze Keuken &amp; Barista Bar
+</h2>
+<p class="text-amara-bronze-soft text-base sm:text-lg font-light leading-relaxed">
+  Puur, esthetisch en met passie bereid. Van ceremoniële matcha tot rijkelijk belegd ambachtelijk brood en trompe-l'œil patisserie.
+</p>
+</div>
+<!-- 4 Highlights Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+<!-- Card 1: Burrata Sandwich -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-amara-gold-border/30 flex flex-col hover:-translate-y-2 transition-transform duration-300 hover:shadow-lg" data-purpose="menu-card">
+<div class="h-60 overflow-hidden relative">
+<img alt="Burrata Toast &amp; Pesto geserveerd met granaatappel en chips" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY3sp6y_HCprp5oDwapW3S_VbyeZpMG0C8dgvC_9AoSNcrrqaYIJnv924hmW89LxIsLE_UH-9RZNFw37_fuiO75wev4j-Jc4ijYTuYkLvkhBQBAMfQi1AepS72FOdRUxZymrQ6UPOn4rPl3gxcBntdPSbe_zbrrnyp2YG8eilbhhd3GM6nUNjbXCa-77BiS-whXhUeHOlNU59T5uH7uNP1cJyTb-xW0AvHFkOcU9ijjjoEki_zLNB7l0YR-3pC12aSVw">
+<span class="absolute top-4 right-4 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full text-xs font-bold text-amara-bronze shadow-xs border border-amara-gold-border/40">
+  Brunch Favoriet
+</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-serif text-2xl text-amara-bronze mb-2">Burrata Toast &amp; Pesto</h3>
+<p class="text-xs sm:text-sm text-amara-bronze-soft leading-relaxed">
+  Royaal krokant zuurdesembrood met romige buffelburrata, zoete tomaatjes, huisgemaakte pesto, granaatappelpitjes en knapperige nacho chips.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-amara-gold-border/30 flex items-center justify-between">
+<span class="text-xs uppercase tracking-wider text-amara-sage-dark font-bold">All-Day Brunch</span>
+<span class="font-serif text-lg font-bold text-amara-bronze">€ 14,50</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Avocado Green Sourdough -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-amara-gold-border/30 flex flex-col hover:-translate-y-2 transition-transform duration-300 hover:shadow-lg" data-purpose="menu-card">
+<div class="h-60 overflow-hidden relative">
+<img alt="Avocado Green Sourdough met kiemen en gegrilde courgette" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQTAgkxsnWKtfK-GPh2lxMUqU7SP1D1h7d_abogbO1W47a0bOuk7MxaSyY6hlvdnHjAGB7c17R5Vtt6e7fAmgOSWxL7sTbXqT7PGbJPtNhqBcABNqjOahwquYYaIYQNlSBoWodxnUucfpIhYuz_MjhVLfvej-RO_1heryym9jerPGE9-zVZvcxBK4abwavdgVcO6t3vBGBNevfXhGj4gkusUp8s1TGpiLTMI0RkWXw5RlyvbK26iWa90Qv7k1V0NlGmQ">
+<span class="absolute top-4 right-4 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full text-xs font-bold text-amara-bronze shadow-xs border border-amara-gold-border/40">
+  Vegan Optie
+</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-serif text-2xl text-amara-bronze mb-2">Avocado Green Sourdough</h3>
+<p class="text-xs sm:text-sm text-amara-bronze-soft leading-relaxed">
+  Geroosterd ambachtelijk brood met fluweelzachte avocado-crème, gegrilde courgette, verse tuinkiemen, radijs en biologische zadenmix.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-amara-gold-border/30 flex items-center justify-between">
+<span class="text-xs uppercase tracking-wider text-amara-sage-dark font-bold">Gezond &amp; Vers</span>
+<span class="font-serif text-lg font-bold text-amara-bronze">€ 13,50</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Viral Trompe-l'œil Fruitgebak -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-amara-gold-border/30 flex flex-col hover:-translate-y-2 transition-transform duration-300 hover:shadow-lg" data-purpose="menu-card">
+<div class="h-60 overflow-hidden relative dessert-reveal">
+<img alt="Viraal Trompe-l'œil fruitgebak in de vitrine van Amara" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnhQRiKQeJD0kYNPdA72wQyXwvirfidN8JCcAzYp5sslLb1RxLUMFZGAl1ymlITBe__nytjrauVvGJKZOr2Eu9-99EM-bvPM_1wwRGIoD0lZHIrboAPq5Zxf6Ths-s2hD0ui0M6l8p8pvWBLEShlyHIdvSCX1UuF3XYaKcz6C9RRzeePkdKPcCaz6YqKNSB3nkXPvbZj_VHEIhI0SxVwhTReScgZhnrgKdm6IyDoWDMHGHs-_n-qVFif-UFLjU_Trptg">
+<span class="absolute top-4 right-4 bg-amara-bronze text-amara-gold px-3 py-1 rounded-full text-xs font-bold tracking-wide border border-amara-gold/40 shadow-xs">
+  Social Viral
+</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-serif text-2xl text-amara-bronze mb-2">Viraal Fruitgebak</h3>
+<p class="text-xs sm:text-sm text-amara-bronze-soft leading-relaxed">
+  Onze befaamde trompe-l'œil patisserie! Een zijdezachte mousse met fruitkern omhuld door een krakend laagje cacaoboter in levensechte mango- en citroenvormen.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-amara-gold-border/30 flex items-center justify-between">
+<span class="text-xs uppercase tracking-wider text-amara-sage-dark font-bold">Ambacht Pâtisserie</span>
+<span class="font-serif text-lg font-bold text-amara-bronze">€ 7,90</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Grand Brunch Platter & Matcha -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-amara-gold-border/30 flex flex-col hover:-translate-y-2 transition-transform duration-300 hover:shadow-lg" data-purpose="menu-card">
+<div class="h-60 overflow-hidden relative">
+<img alt="Luxe brunch plank vol croissants fruit en zoetigheden bij Amara" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcHJ4apabz_kcipPbElEQ-7Kfw42bJuIetJqb_mPkLHlp_70Hnv0u5DgCiWo3Q3KXLVBZs_NNNg0KgX6tvRc1S0Fk4h1G23kZejVi4RalpmfL8-9qbYqIRTtxQ0rcN3-fG_m0zo6-R2IXEqo-RrTzYCcp0ePQnE2jEkPRCJKkUXkyq63gMrPmqklGnoQCxc1lM18eRZAsfUajFkRw9zrdXzpo9kpQvvjXh20XaXgtsGWReOImJZyeGUHFrpbaO63cDQg">
+<span class="absolute top-4 right-4 bg-amara-gold/30 text-amara-bronze px-3 py-1 rounded-full text-xs font-bold border border-amara-gold/50 shadow-xs">Luxe Sharing Platter</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="font-serif text-2xl text-amara-bronze mb-2">Grand Amara Brunch Plank</h3>
+<p class="text-xs sm:text-sm text-amara-bronze-soft leading-relaxed">
+  Rijke etagère plank vol warme mini-croissants, ambachtelijk beleg, vers gesneden seizoensfruit, sapjes en warme latte art naar keuze.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-amara-gold-border/30 flex items-center justify-between">
+<span class="text-xs uppercase tracking-wider text-amara-sage-dark font-bold">Heerlijk Delen</span>
+<span class="font-serif text-lg font-bold text-amara-bronze">€ 18,50 p.p.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MenuHighlightsSection -->
+<!-- BEGIN: GoogleReviewsSection -->
+<section class="py-20 md:py-28 bg-white border-t border-amara-gold-border/30 relative" id="reviews"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="max-w-3xl mx-auto text-center mb-10"><div class="flex flex-wrap items-center justify-center gap-3 mb-4"><div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-amara-gold-border/60 shadow-xs text-xs"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path></svg><span class="font-bold text-amara-bronze">Google Rating</span><span class="text-amber-500 font-bold">★★★★★</span><span class="font-bold text-amara-bronze">4.7/ 5.0</span><span class="text-amara-bronze-soft">(200+) reviews)</span></div></div><h2 class="font-serif text-3xl sm:text-5xl text-amara-bronze font-normal mb-3">Directe Ervaringen van Gasten</h2></div><div class="flex items-center justify-between flex-wrap gap-4 mb-8 pb-4 border-b border-amara-gold-border/30"><div class="flex items-center gap-3"><a class="inline-flex items-center gap-1.5 text-xs font-bold text-amara-bronze hover:text-amara-sage-dark underline decoration-amara-gold/50 underline-offset-2" href="https://maps.google.com/?q=Plein+31A,+2291+CA+Wateringen" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-sm text-amara-gold">rate_review</span><span class="">Schrijf een review op Google</span></a></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"><div class="bg-amara-cream/60 rounded-3xl p-6 border border-amara-gold-border/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative"><div class="flex items-start justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-amara-bronze text-amara-gold flex items-center justify-center font-bold text-xs shadow-xs">SM</div><div><h4 class="font-bold text-xs text-amara-bronze">Sanne van der Meer</h4><span class="text-[10px] text-amara-bronze-soft block">Local Guide • 42 reviews</span></div></div><div class="flex text-amber-500 text-xs">★★★★★</div></div><p class="text-xs sm:text-sm text-amara-bronze leading-relaxed font-light mb-4">“Geweldige burrata toast! Zo ontzettend vers, vol smaak en prachtig opgemaakt. Geen stijf gedoe, gewoon binnenlopen en meteen een warm welkom.”</p><div class="pt-3 border-t border-amara-gold-border/30 flex items-center justify-between text-[10px] text-amara-bronze-soft"><span class="inline-flex items-center gap-1 text-emerald-800 font-semibold"><span class="material-symbols-outlined text-xs">verified</span> Geverifieerd op Google</span></div></div><div class="bg-amara-cream/60 rounded-3xl p-6 border border-amara-gold-border/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative"><div class="flex items-start justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-amara-sage-dark text-white flex items-center justify-center font-bold text-xs shadow-xs">ML</div><div><h4 class="font-bold text-xs text-amara-bronze">Mark &amp; Lisa Vrolijk</h4><span class="text-[10px] text-amara-bronze-soft block">Wateringen • 18 reviews</span></div></div><div class="flex text-amber-500 text-xs">★★★★★</div></div><p class="text-xs sm:text-sm text-amara-bronze leading-relaxed font-light mb-4">“De golvende designspiegel en gouden lamp hangen nu prachtig in onze woonkamer! Zo uniek dat je ter plekke alles direct kunt afrekenen en meenemen.”</p><div class="pt-3 border-t border-amara-gold-border/30 flex items-center justify-between text-[10px] text-amara-bronze-soft"><span class="inline-flex items-center gap-1 text-emerald-800 font-semibold"><span class="material-symbols-outlined text-xs">verified</span> Geverifieerd op Google</span></div></div><div class="bg-amara-cream/60 rounded-3xl p-6 border border-amara-gold-border/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative"><div class="flex items-start justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-amara-gold text-amara-bronze flex items-center justify-center font-bold text-xs shadow-xs">FW</div><div><h4 class="font-bold text-xs text-amara-bronze">Fleur de Winter</h4><span class="text-[10px] text-amara-bronze-soft block">Den Haag • 67 reviews</span></div></div><div class="flex text-amber-500 text-xs">★★★★★</div></div><p class="text-xs sm:text-sm text-amara-bronze leading-relaxed font-light mb-4">“Absoluut de beste ceremoniële matcha latte in de hele regio! Het virale mango fruitgebakje zag er niet alleen magisch uit maar smaakte hemels.”</p><div class="pt-3 border-t border-amara-gold-border/30 flex items-center justify-between text-[10px] text-amara-bronze-soft"><span class="inline-flex items-center gap-1 text-emerald-800 font-semibold"><span class="material-symbols-outlined text-xs">verified</span> Geverifieerd op Google</span></div></div><div class="bg-amara-cream/60 rounded-3xl p-6 border border-amara-gold-border/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative"><div class="flex items-start justify-between mb-4"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-amara-bronze-soft text-white flex items-center justify-center font-bold text-xs shadow-xs">DB</div><div><h4 class="font-bold text-xs text-amara-bronze">Danielle Berkhout</h4><span class="text-[10px] text-amara-bronze-soft block">Rijswijk • 29 reviews</span></div></div><div class="flex text-amber-500 text-xs">★★★★★</div></div><p class="text-xs sm:text-sm text-amara-bronze leading-relaxed font-light mb-4">“Babyshower High Tea gereserveerd door vooraf even te bellen. De tafel was sprookjesachtig gedekt met verse bloemen. Iedereen was onder de indruk!”</p><div class="pt-3 border-t border-amara-gold-border/30 flex items-center justify-between text-[10px] text-amara-bronze-soft"><span class="inline-flex items-center gap-1 text-emerald-800 font-semibold"><span class="material-symbols-outlined text-xs">verified</span> Geverifieerd op Google</span></div></div></div><div class="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4"><a class="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white text-amara-bronze text-xs font-bold uppercase tracking-widest border border-amara-gold-border/60 hover:bg-amara-cream shadow-sm transition-all duration-300 hover:shadow-md" href="https://maps.google.com/?q=Plein+31A,+2291+CA+Wateringen" rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path></svg><span class="">Bekijk alle reviews op Google Maps</span><span class="material-symbols-outlined text-xs">open_in_new</span></a></div></div></section>
+<!-- END: GoogleReviewsSection -->
+<!-- BEGIN: VIPConciergeAndMapSection (NO FORM FIELDS) -->
+<section class="py-20 md:py-28 bg-white border-t border-amara-gold-border/30 relative overflow-hidden" data-purpose="social-feed-lookbook" id="socials"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center max-w-3xl mx-auto mb-14"><span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amara-gold/15 text-amara-bronze text-xs font-bold tracking-widest uppercase mb-4 border border-amara-gold-border/40"><span class="w-2 h-2 rounded-full bg-amara-gold animate-pulse"></span>Socials &amp; Beleving</span><h2 class="font-serif text-3xl sm:text-5xl text-amara-bronze font-normal mb-4">Volg Ons Verhaal op Instagram</h2><p class="text-amara-bronze-soft text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto mb-6">Laat je dagelijks inspireren door verse patisserie, serene interieurmomenten en seizoensgebonden brunchcreaties op het Plein in Wateringen.</p><div class="inline-flex items-center gap-2 px-5 py-2 rounded-full frosted-glass border border-amara-gold-border/50 text-amara-bronze text-sm font-semibold shadow-xs"><span class="text-amara-gold font-bold">@amara_wateringen</span><span class="text-amara-bronze-soft font-normal text-xs">• Dagelijkse sfeer &amp; vitrine updates</span></div></div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-12"><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="Amara avonduitstraling en sfeer gevel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGJYMvskTxqIxASUywnSUyvDuRd9fZu0OQjiT4ehtuYQoV1sILzTw1e3oSAcRNpkx7wx6A6Tvnf_8XdByh7gB-aYJnE6ttEbpAzRIBiWcjBPZ_wfIdmKq4x2e7lwTtOSJ5FAAEH_u8x-DfnFTCpZrwWcn_Rvay-gQrjMe1D2tNP-OP0GXcHwVfZlK9pgfrF85pIAnr1ZEwmMXZC6GYVDxBebaibUPgLpuAwHRkBqCyWKlGy1F8SU9j2EFs3NndZ7_vw"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">favorite</span><span class="text-[11px] font-bold tracking-wide">Gezellige Avond</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="Luxe High Tea tafel met bloemen en etagères" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEa6PE-2zo-e2Nq5hd6Z8Hi8bJwaOsNIsd2woQGPGtP-VoiJCMIekRAGrmnejHs6XaNzm-OI1yh84_FzmTaiJmxReUAEZ1AiR6QJxz9EN5ylKIkR4zA07RlmSO1JoZR-fNRQv-ZiKeuSt6NMVWbL1wpEgYqG6eqlti0q4Z4DHbSkaW0SEJseE-Gn6H830pLCeKD-zWlk17Ce4YfRExi3qvp2aMWgFfzEc04SoIlhdPIYxD_nlna5AsCnozd3qde_lbqg"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">local_florist</span><span class="text-[11px] font-bold tracking-wide">High Tea Tafels</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="Sfeervolle bar met vitrine en warme lampen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD61ZgiJX_6kCeWc9ep9gdRs8-FKNQgTECPY5XKtDrN_8iUOSzbwIg02VkeyFuUfdvfx0fA_E8bwxJileUyaadJHS4eAspFOLtz7F2AlN6TxPfuekrHGN0LlDO4wVv78lOKap5qX5Zy5DEe60gtZzD-6qCs0aLjPwGfNHTfBQSbCxcJOVxG2Ow4f3NoVya3_9-HiUQq5hg50kJVjD8HzeINHYgg5Cmad7hhcGEdHhMhX0PrUSnLpnCaWoClomjSObshw"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">coffee</span><span class="text-[11px] font-bold tracking-wide">Barista Bar</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="Viraal trompe-l'oeil fruitgebak in vitrine" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLCPkBK2KcT6BgyHUIu3RDvzcTvF8cDOKcjRV_W979sZYRbTz5lFYvSwth6OMFjBPiJH7aBXkREzKQpQYtfea4Ge23nF1Q-RBIBlMwlQ9CqV7wWtxsReK3EaM4xWnii6m7sQkHXqK3rBv7MOAKrNOM1ZaRBpHvljl9sWwOCMDQJbu3xwVQP_RdRrQbuq_tL1YPUEGGF0WazFZJRlHga-4OStLc1ZUlAS9YCCZuuxhBifA7yNRd35GetWhYi54FjlW3vA"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">auto_awesome</span><span class="text-[11px] font-bold tracking-wide">Viraal Gebak</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="In-store keramiek en organische nissen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcV11NecJRuMnaP_0SY-7aL4E2EQFvDmaiuGwNp8Yj3cd_HL5whRn5nGEDPYLX1xukfqiwr2LgPeFRe91BYevr05YNGEvyfWOuSTKvUnzz3Vq8WcZZiSs5dWANwvRAn1f7sQY8jTP_MXBTDCEIOHmt4B_G7_GBl0SVcdeeTt5uRsEi5y6usS508k0d0h4SIfHd06QJt9xrxll1g9kC1-VE1SC3dDddbjlYY5IUbv9hQlECVIExGI7fHCR2EBBR6tWy4Q"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">storefront</span><span class="text-[11px] font-bold tracking-wide">In-Store Design</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a><a class="group relative rounded-2xl overflow-hidden aspect-square border border-amara-gold-border/30 shadow-xs hover:shadow-lg transition-all duration-300 block" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><img alt="Kleurrijke brunchtafel met verse broodjes en sappen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtunVikLLTwAjVcb4fjh8p8Zf1lwL3t1Thc6GUXYSyqTYcQzhal8m3nMA9GbTio9VkQt8G96JeKH09pnnqdqxZ54B6SO2vGsNmZAagv1bZhPqZynf8hyOc--UCchd_-sbffQqar9Dm0NUnLFS6X7mG7KvMq0Ay8Wly4MzbDC0OX8o975TRZ-8PAuyOjrOYF3MsPZWCBpwpK-a1oE8yZ4JS25hypFC5nHIka6uJs429p-rkXTNVF4KA-mbUUqGINC_LTQ"><div class="absolute inset-0 bg-amara-bronze/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-3 text-white text-center"><span class="material-symbols-outlined text-2xl text-amara-gold mb-1">brunch_dining</span><span class="text-[11px] font-bold tracking-wide">All-Day Brunch</span><span class="text-[9px] text-white/80">@amara_wateringen</span></div></a></div><div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4"><a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-amara-bronze text-white text-xs font-bold uppercase tracking-widest hover:bg-amara-bronze-soft transition-all duration-300 shadow-md border border-amara-gold/40 hover:shadow-gold-glow" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-amara-gold">photo_camera</span><span class="">Volg op Instagram</span></a><a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-amara-bronze text-xs font-bold uppercase tracking-widest hover:bg-amara-cream transition-all duration-300 shadow-sm border border-amara-gold-border/50" href="https://www.tiktok.com/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-amara-gold">smart_display</span><span class="">Bekijk op TikTok</span></a><a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-amara-bronze text-xs font-bold uppercase tracking-widest hover:bg-amara-cream transition-all duration-300 shadow-sm border border-amara-gold-border/50" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-amara-sage-dark">share</span><span class="">Facebook Kanaal</span></a><a class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-amara-sand/50 text-amara-bronze text-xs font-bold uppercase tracking-widest hover:bg-amara-gold-light transition-all duration-300 border border-amara-gold-border/40" href="https://maps.google.com/?q=Plein+31A,+2291+CA+Wateringen" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-base text-amara-bronze">star</span><span class="">Google Locatie &amp; Foto's</span></a></div></div></section><section class="py-20 md:py-28 bg-amara-cream border-t border-amara-gold-border/30 relative" data-purpose="concierge-and-location" id="locatie">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16"><span class="inline-block px-3.5 py-1 rounded-full bg-amara-gold/15 text-amara-bronze text-xs font-bold tracking-widest uppercase mb-3 border border-amara-gold-border/40">Warme Gastvrijheid &amp; Inloop</span><h2 class="font-serif text-3xl sm:text-5xl text-amara-bronze font-normal mb-4">Geen Formulieren. Direct Persoonlijk Contact.</h2><p class="text-amara-bronze-soft text-base font-light">Bij Amara geloven we in ongecompliceerde gastvrijheid: schuif spontaan aan op Plein 31A of bel ons direct voor al je vragen.</p></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+<!-- Left Column: Haute VIP Concierge Desk Box -->
+<div class="lg:col-span-5 bg-white p-8 sm:p-10 rounded-3xl shadow-lg border border-amara-gold-border/40 flex flex-col justify-between"><div><div class="flex items-center justify-between mb-6"><span class="text-xs font-bold uppercase tracking-widest text-amara-gold">Persoonlijk Contact</span><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-semibold border border-emerald-200"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>Telefonisch Bereikbaar</span></div><h3 class="font-serif text-3xl text-amara-bronze mb-4">Spontaan binnenwandelen of even overleggen?</h3><p class="text-xs sm:text-sm text-amara-bronze-soft leading-relaxed font-light mb-8">Voor ontbijt, lunch, gebak en koffie hanteren wij een open deur beleid: schuif gezellig aan! Heb je een vraag over een High Tea, een groepsviering of wil je een specifiek interieuritem reserveren? Bel ons gerust direct.</p><div class="space-y-4 mb-8"><a class="w-full py-4 px-6 rounded-2xl bg-amara-bronze hover:bg-amara-bronze-soft text-white font-bold text-xs uppercase tracking-wider transition-all duration-300 shadow-lg border border-amara-gold flex items-center justify-between group" href="tel:0610195065"><div class="flex items-center gap-3.5"><div class="w-10 h-10 rounded-full bg-amara-gold/20 flex items-center justify-center text-amara-gold group-hover:scale-110 transition-transform"><span class="material-symbols-outlined text-2xl">call</span></div><div class="text-left"><div class="text-sm font-bold">Bel direct: 06 10195065</div><div class="text-[10px] text-white/70 font-normal">Direct contact met ons team</div></div></div><span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform text-amara-gold">arrow_forward</span></a><div class="p-4 rounded-2xl bg-amara-sand/40 border border-amara-gold-border/40 flex items-center gap-3"><span class="material-symbols-outlined text-xl text-amara-sage-dark">store</span><p class="text-xs text-amara-bronze font-medium leading-relaxed">Geen WhatsApp of digitaal wachten — wij heten je telefonisch of ter plekke aan de toog persoonlijk welkom.</p></div></div></div><div class="pt-6 border-t border-amara-gold-border/30 bg-amara-cream/40 p-4 rounded-2xl"><div class="flex justify-between items-center text-xs mb-1"><span class="font-semibold text-amara-bronze">Openingstijden:</span><span class="text-amara-sage-dark font-bold">Ma t/m Za 09:00 - 22:00 | Zo 11:00 - 22:00</span></div><p class="text-[11px] text-amara-bronze-soft italic">Gratis parkeren met blauwe schijf direct op en rondom het Plein.</p></div></div>
+<!-- Right Column: Interactive Embedded Google Maps & Travel Distances -->
+<div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+<!-- Embedded Interactive Google Maps -->
+<div class="relative overflow-hidden rounded-3xl shadow-xl border border-amara-gold-border/50 bg-white h-[360px] md:h-[400px]">
+<iframe class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Plein+31A,+2291+CA+Wateringen&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Amara Home en Cafe Google Maps Locatie Plein 31A Wateringen">
+</iframe>
+<!-- Overlay Card on Map -->
+</div>
+<!-- Travel Times Card and Navigation Link -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4"><div class="bg-white p-4 rounded-2xl border border-amara-gold-border/40 shadow-xs text-center"><span class="text-[10px] uppercase font-bold text-amara-gold tracking-wider block mb-1">Vanaf Den Haag</span><span class="font-serif text-xl font-bold text-amara-bronze">~12 min</span><span class="text-[10px] text-amara-bronze-soft block mt-0.5">Via Wippolderlaan</span></div><div class="bg-white p-4 rounded-2xl border border-amara-gold-border/40 shadow-xs text-center"><span class="text-[10px] uppercase font-bold text-amara-gold tracking-wider block mb-1">Vanaf Delft</span><span class="font-serif text-xl font-bold text-amara-bronze">~15 min</span><span class="text-[10px] text-amara-bronze-soft block mt-0.5">Vlotte verbinding N222</span></div><div class="bg-white p-4 rounded-2xl border border-amara-gold-border/40 shadow-xs text-center"><span class="text-[10px] uppercase font-bold text-amara-gold tracking-wider block mb-1">Rijswijk &amp; Naaldwijk</span><span class="font-serif text-xl font-bold text-amara-bronze">~8-10 min</span><span class="text-[10px] text-amara-bronze-soft block mt-0.5">Midden op het Plein</span></div></div>
+<!-- Direct Navigation CTA -->
+<div class="flex items-center justify-between p-4 rounded-2xl bg-amara-gold/15 border border-amara-gold-border/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-amara-bronze">directions_car</span>
+<span class="text-xs font-semibold text-amara-bronze">Navigeer direct met Google Maps of Apple Kaarten</span>
+</div>
+<a class="px-5 py-2.5 rounded-full bg-amara-bronze text-white text-xs font-bold uppercase tracking-wider hover:bg-amara-bronze-soft transition-all shadow-sm" href="https://maps.google.com/?q=Plein+31A,+2291+CA+Wateringen" rel="noopener noreferrer" target="_blank">
+    Route Starten
+  </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: VIPConciergeAndMapSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-amara-bronze text-white pt-16 pb-16 border-t border-amara-gold/30" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+<!-- Footer Left: Logo & Warm Identity -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Amara Home and Cafe" class="w-12 h-12 rounded-full border border-amara-gold/50 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgcDBHOZQ2IDMVaXP2usOBCIBwFkB-UUc7wwAEPRIdX4xsuAxOARsBrnM7txA1Spj6-Iq9FFEzy_oD6OjhpIabKap_uBMvYNqw-iKdeqvUjFuJfABf-xzodShkzS-yNs_u7BdKATI1Vwe55ZQHvh5PBroQu3yxqbN3hp-F_kJmVU-2nF-xaPExi7ezP-2U8zn5Bu4HLosBAPE8cAmSCL7dpFGZnE2xlqwVJuEqpbK3tfiG6eNMdIihstxJ72WGxjOqeQ">
+<div>
+<span class="font-serif text-2xl font-bold tracking-wider uppercase block text-amara-gold">Amara</span>
+<span class="text-[10px] tracking-[0.2em] text-white/70 uppercase">Home &amp; Café • Wateringen</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-white/70 font-light leading-relaxed max-w-sm">
+  Een gastvrije, warme pleisterplaats waar heerlijke barista-koffie, all-day brunch, esthetische taarten en een mee-te-nemen interieurcollectie harmonieus samensmelten.
+</p>
+</div>
+<!-- Footer Center: Navigation Links -->
+<div class="md:col-span-3 space-y-3">
+<h4 class="text-xs uppercase tracking-widest text-amara-gold font-bold">Ontdek Amara</h4>
+<ul class="space-y-2 text-xs sm:text-sm text-white/70 font-light">
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#over">Over Onze Zaak</a></li>
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#concept">Het Fysieke Interieur Concept</a></li>
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#menu">Brunch &amp; Patisserie</a></li>
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#reviews">Google Beoordelingen</a></li>
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#locatie">Locatie &amp; Route</a></li>
+<li class=""><a class="hover:text-amara-gold transition-colors" href="#socials">Socials &amp; Sfeerimpressies</a></li></ul>
+</div>
+<!-- Footer Right: In-Store Reminder & Location -->
+<div class="md:col-span-4 space-y-3">
+<h4 class="text-xs uppercase tracking-widest text-amara-gold font-bold">Bezoek Ons in Wateringen</h4>
+<p class="text-xs sm:text-sm text-white/80 leading-relaxed font-light">
+  Plein 31A<br>
+  2291 CA Wateringen, Nederland
+</p>
+<div class="pt-2">
+<span class="inline-block text-[11px] text-white/80 bg-white/5 border border-amara-gold/30 px-3 py-1.5 rounded-lg">
+  Spontane inloop altijd welkom • Bel bij vragen: 06 10195065
+</span>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright Line -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+<p class="">© 2025 Amara Home &amp; Café Wateringen. Alle rechten voorbehouden.</p>
+<p class="font-serif italic text-amara-gold text-sm">"Where good taste feels like home."</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: Floating Call Banner / Button (Haute Pill Badge with Haptic Animation) -->
+<aside aria-label="Floating Quick Call Badge" class="fixed bottom-5 inset-x-0 z-50 px-4 pointer-events-none flex justify-center">
+<a class="pointer-events-auto frosted-dark border border-amara-gold/60 rounded-full py-2.5 px-6 shadow-dock hover:shadow-gold-glow hover:border-amara-gold transition-all duration-300 flex items-center gap-3.5 group cursor-pointer" href="tel:0610195065"><div class="relative flex items-center justify-center animate-haptic"><span class="w-9 h-9 rounded-full bg-amara-gold/20 flex items-center justify-center border border-amara-gold/50 text-amara-gold group-hover:scale-110 transition-transform"><span class="material-symbols-outlined text-xl">call</span></span><span class="w-2.5 h-2.5 rounded-full bg-emerald-400 absolute -top-0.5 -right-0.5 ring-2 ring-amara-bronze"></span></div><div class="flex flex-col text-left"><span class="text-[10px] text-white/80 uppercase tracking-widest font-medium">Vragen of reserveren?</span><span class="text-xs sm:text-sm font-bold text-white group-hover:text-amara-gold transition-colors">Bel direct: <span class="text-amara-gold underline decoration-amara-gold/50 underline-offset-2">06 10195065</span></span></div><span class="material-symbols-outlined text-sm text-amara-gold group-hover:translate-x-1 transition-transform ml-1">chevron_right</span></a>
+</aside>
+<!-- END: Floating Call Banner / Button -->
+
+
+
+<button class="receipt-tab" type="button" onclick="toggleReceipt()">receipt ↟</button>
+<div id="amaraReceipt" class="receipt"><div style="text-align:center;font-family:serif;font-size:20px">AMARA</div><div style="text-align:center;font-size:10px">HOME & CAFÉ · WATERINGEN</div><hr><div>1x coffee <span style="float:right">✓</span></div><div>1x something sweet <span style="float:right">✓</span></div><div>1x vase I definitely needed <span style="float:right">✓</span></div><hr><b>TOTAL <span style="float:right">worth it 🤎</span></b><hr><div style="text-align:center;font-size:10px">everything is for sale*</div><div style="text-align:center;font-size:9px">*almost everything 😉</div></div>
+<div id="amaraCookie" class="amara-cookie" role="dialog" aria-label="Cookie voorkeuren"><div style="display:flex;gap:14px;align-items:flex-start"><div class="cookie-emoji">🍪</div><div><div style="font-family:serif;font-size:22px;color:#5b4031">Even over cookies…</div><p id="cookieLine" style="margin:5px 0 0;color:#806a5d;font-size:12px;line-height:1.55;transition:.18s">Helaas niet het soort uit onze vitrine. Die zijn een stuk lekkerder. 🤎</p></div></div><div class="cookie-actions"><button class="cookie-btn cookie-yes" onclick="acceptAmaraCookies(event)">Prima, serveer ze maar 🍪</button><button class="cookie-btn cookie-no" onclick="essentialCookies()">Alleen noodzakelijk 🙈</button></div></div>
+<script>
+(function(){
+ const lines=['Helaas niet het soort uit onze vitrine. Die zijn een stuk lekkerder. 🤎','Cookies + koffie = technisch gezien een balanced diet? 👀','Wij bewaren voorkeuren. Jij bewaart hopelijk ruimte voor dessert. 🍰'];let i=0;
+ setInterval(()=>{const e=document.getElementById('cookieLine');if(e){i=(i+1)%lines.length;e.style.opacity=0;setTimeout(()=>{e.textContent=lines[i];e.style.opacity=1},180)}},4200);
+ setTimeout(()=>{try{if(!localStorage.getItem('amara_cookie_choice'))document.getElementById('amaraCookie')?.classList.add('show')}catch(e){document.getElementById('amaraCookie')?.classList.add('show')}},1100);
+ updateAmaraOpeningStatus(); setInterval(updateAmaraOpeningStatus,60000);
+})();
+function acceptAmaraCookies(ev){try{localStorage.setItem('amara_cookie_choice','all')}catch(e){}const r=ev.currentTarget.getBoundingClientRect();for(let i=0;i<14;i++){const c=document.createElement('span');c.className='crumb';c.textContent=i%4===0?'✨':'•';c.style.left=(r.left+r.width/2)+'px';c.style.top=r.top+'px';c.style.setProperty('--x',(Math.random()*180-90)+'px');c.style.setProperty('--y',(-30-Math.random()*120)+'px');document.body.appendChild(c);setTimeout(()=>c.remove(),900)}document.getElementById('amaraCookie')?.classList.remove('show')}
+function essentialCookies(){try{localStorage.setItem('amara_cookie_choice','essential')}catch(e){}document.getElementById('amaraCookie')?.classList.remove('show')}
+function toggleReceipt(){document.getElementById('amaraReceipt')?.classList.toggle('show')}
+function updateAmaraOpeningStatus(){
+ const badge=document.getElementById('openingStatusBadge'),dot=document.getElementById('openingStatusDot'),text=document.getElementById('openingStatusText');if(!badge||!dot||!text)return;
+ const now=new Date(),day=now.getDay(),mins=now.getHours()*60+now.getMinutes(),open=day===0?660:540,close=1320,fmt=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+ if(mins>=open&&mins<close){text.innerHTML='Open vandaag · <strong>tot '+fmt(close)+'</strong>';badge.classList.remove('bg-red-50','text-red-700','border-red-200');badge.classList.add('bg-white/90','text-amara-bronze','border-amara-gold-border/40');dot.className='w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0'}
+ else{let msg;if(mins<open)msg='Gesloten · vandaag geopend vanaf <strong>'+fmt(open)+'</strong>';else{const tomorrow=(day+1)%7;msg='Gesloten · morgen geopend vanaf <strong>'+fmt(tomorrow===0?660:540)+'</strong>'}text.innerHTML=msg;badge.classList.remove('bg-white/90','text-amara-bronze','border-amara-gold-border/40');badge.classList.add('bg-red-50','text-red-700','border-red-200');dot.className='w-2 h-2 rounded-full bg-red-500 flex-shrink-0'}
+}
+</script>
+</body></html>
