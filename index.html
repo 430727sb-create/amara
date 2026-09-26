@@ -1,0 +1,819 @@
+<!DOCTYPE html><html lang="nl" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Halal slagerij Rijswijk | Slagerij &amp; Supermarkt Dar Rif</title><meta name="description" content="Slagerij &amp; Supermarkt Dar Rif aan de Henri Dunantlaan 62 in Rijswijk. Halal slagerij met vers vlees en mediterrane levensmiddelen."><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#f0bf5c", "on-error-container": "#93000a", "surface-tint": "#aa3531", "surface-dim": "#d7dbd6", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#2b4e30", "secondary-fixed": "#ffdea4", "surface-container-low": "#f0f5f0", "on-secondary-container": "#755400", "on-error": "#ffffff", "primary": "#6a020a", "outline-variant": "#dfbfbc", "secondary": "#7b5900", "background": "#f6fbf5", "primary-fixed": "#ffdad6", "inverse-primary": "#ffb3ad", "on-secondary": "#ffffff", "surface": "#f6fbf5", "error": "#ba1a1a", "tertiary-container": "#2d5031", "outline": "#8b716e", "surface-bright": "#f6fbf5", "tertiary-fixed-dim": "#a9d1a8", "inverse-surface": "#2c322e", "on-secondary-fixed": "#261900", "inverse-on-surface": "#edf2ed", "surface-variant": "#dfe4df", "tertiary-fixed": "#c4edc3", "on-tertiary-container": "#9ac19a", "on-surface": "#181d1a", "on-primary-fixed": "#410003", "surface-container-highest": "#dfe4df", "surface-container-lowest": "#ffffff", "primary-container": "#8b1e1e", "secondary-container": "#fcca66", "on-primary-fixed-variant": "#891c1d", "surface-container": "#ebefea", "on-surface-variant": "#58413f", "primary-fixed-dim": "#ffb3ad", "tertiary": "#16391c", "on-primary-container": "#ff9d95", "on-background": "#181d1a", "error-container": "#ffdad6", "on-tertiary-fixed": "#002108", "on-secondary-fixed-variant": "#5d4200", "on-tertiary": "#ffffff", "surface-container-high": "#e5e9e4" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xl": "2.5rem", "margin-desktop": "4rem", "space-md": "1rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-2xl": "4rem", "gutter": "1.5rem" }, "fontFamily": { "body-sm": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "display-lg": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Playfair Display" ], "headline-md": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "title-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "50px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-lg": [ "56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-sm": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "headline-sm": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "headline-md": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ] } } } };</script><style id="dar-rif-mobile-ux">
+html{scroll-behavior:smooth}
+@media (max-width:767px){
+  html{scroll-padding-top:76px}
+  body{overscroll-behavior-y:auto;padding-bottom:72px}
+  /* Compact header: less screen space while scrolling */
+  header{position:sticky!important;top:0!important}
+  header>.bg-primary{display:none!important}
+  header>.h-24{height:68px!important;padding-left:14px!important;padding-right:14px!important;gap:8px!important}
+  header img{height:38px!important}
+  header .font-headline-sm{font-size:19px!important;line-height:22px!important}
+  header .font-label-sm{font-size:9px!important;line-height:12px!important;max-width:210px}
+  main{padding-top:0!important}
+
+  /* Reduce endless vertical whitespace */
+  main section{padding-top:36px!important;padding-bottom:36px!important}
+  main section.dr-marquee{padding-top:10px!important;padding-bottom:10px!important}
+  .py-space-xl{padding-top:28px!important;padding-bottom:28px!important}
+  .py-space-2xl{padding-top:38px!important;padding-bottom:38px!important}
+  .p-space-xl{padding:20px!important}
+  .p-space-lg{padding:16px!important}
+  .gap-gutter-desktop{gap:18px!important}
+  .gap-space-xl{gap:22px!important}
+
+  /* Hero becomes compact and action-first */
+  h1.text-display-lg{font-size:36px!important;line-height:40px!important;letter-spacing:-.025em!important}
+  .text-headline-lg{font-size:29px!important;line-height:35px!important}
+  .text-headline-md{font-size:24px!important;line-height:30px!important}
+  .text-headline-sm{font-size:20px!important;line-height:26px!important}
+  .text-body-lg{font-size:16px!important;line-height:24px!important}
+  main>div>section:first-of-type{padding-top:28px!important}
+  main>div>section:first-of-type .flex.flex-wrap.items-center.gap-space-md{display:grid!important;grid-template-columns:1fr 1fr!important;width:100%;gap:8px!important}
+  main>div>section:first-of-type .flex.flex-wrap.items-center.gap-space-md>a{justify-content:center!important;padding:12px 10px!important;font-size:14px!important;line-height:18px!important}
+  main>div>section:first-of-type .flex.flex-wrap.items-center.gap-space-md>a[href^="tel:"]{grid-column:1/-1}
+  main>div>section:first-of-type .grid.grid-cols-3{gap:7px!important}
+  main>div>section:first-of-type .grid.grid-cols-3>div{padding:9px!important;min-width:0}
+  main>div>section:first-of-type .grid.grid-cols-3 .text-title-lg{font-size:15px!important}
+  main>div>section:first-of-type .grid.grid-cols-3 .text-label-sm{font-size:9px!important;line-height:12px!important}
+  main>div>section:first-of-type img.h-\[480px\]{height:285px!important}
+
+  /* Today strip is swipeable/static instead of an endless animation */
+  .dr-marquee{overflow-x:auto!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .dr-marquee-track{animation:none!important;padding:0 8px}
+  .dr-marquee-track>span{padding-left:12px!important;padding-right:12px!important}
+  .dr-marquee-track>span:nth-child(n+13){display:none}
+
+  /* Dish selector: one-thumb horizontal row, no wrapping */
+  #gerecht-kiezer .text-center{text-align:left!important;margin-bottom:22px!important}
+  #dr-dish-buttons{justify-content:flex-start!important;flex-wrap:nowrap!important;overflow-x:auto!important;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;margin-left:-16px;margin-right:-16px;padding:2px 16px 10px!important;gap:8px!important;scrollbar-width:none}
+  #dr-dish-buttons button{flex:0 0 auto;scroll-snap-align:start;padding:10px 16px!important;font-size:14px!important}
+  #gerecht-kiezer .grid{gap:0!important}
+  #gerecht-kiezer .min-h-\[350px\]{min-height:235px!important}
+  #dr-dish-visual{left:18px!important;bottom:16px!important}
+  #gerecht-kiezer .lg\:col-span-5{padding:20px!important}
+  #gerecht-kiezer .mt-5{margin-top:16px!important}
+  #gerecht-kiezer a[href^="tel:"]{width:100%!important;justify-content:center!important}
+
+  /* Cinematic section: impactful but not a full phone screen */
+  .min-h-\[520px\]{min-height:350px!important}
+
+  /* Kiezen / Snijden / Adviseren: swipe cards instead of 3 tall stacked cards */
+  .dr-panel{min-width:82vw!important;height:300px!important;flex:none!important;padding:18px!important;scroll-snap-align:center}
+  .dr-panel:hover{flex:none!important}
+  section:has(.dr-panel) .flex.flex-col.md\:flex-row{flex-direction:row!important;overflow-x:auto!important;min-height:0!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin-left:-16px;margin-right:-16px;padding:0 16px 8px;scrollbar-width:none}
+  section:has(.dr-panel) .text-center{text-align:left!important;margin-bottom:20px!important}
+
+  /* Footer + large closing block */
+  section.bg-inverse-surface.py-24{padding-top:52px!important;padding-bottom:52px!important}
+  section.bg-inverse-surface h2.text-\[52px\]{font-size:36px!important;line-height:41px!important}
+  section.bg-inverse-surface .flex.flex-wrap{display:grid!important;grid-template-columns:1fr!important}
+  footer .py-space-2xl{padding-top:34px!important;padding-bottom:30px!important}
+  footer .grid{gap:24px!important}
+
+  /* Floating slager button no longer blocks text while scrolling */
+  .dr-advice{right:12px!important;bottom:82px!important}
+  .dr-advice>button{width:48px!important;height:48px!important}
+  .dr-advice-panel{position:fixed!important;left:12px!important;right:12px!important;bottom:142px!important;width:auto!important;max-height:62vh;overflow:auto}
+
+  /* Touch behavior: remove desktop hover zoom / reveal waiting */
+  .dr-product-img{transition:none!important}.dr-product:hover .dr-product-img{transform:none!important}
+  .dr-reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+@media (max-width:390px){
+  h1.text-display-lg{font-size:32px!important;line-height:36px!important}
+  header .font-label-sm{max-width:165px}
+  .dr-panel{min-width:88vw!important}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+html{scroll-behavior:smooth} section[id],div[id]{scroll-margin-top:140px}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"Butcher","name":"Slagerij & Supermarkt Dar Rif","telephone":"070-229-0000","address":{"@type":"PostalAddress","streetAddress":"Henri Dunantlaan 62","postalCode":"2286 GE","addressLocality":"Rijswijk","addressCountry":"NL"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"19:00"}]}</script><style>
+.material-symbols-outlined{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap;max-width:1.5em;}
+.material-symbols-outlined{font-size:0}.fonts-loaded .material-symbols-outlined{font-size:inherit}
+</style><script>document.fonts&&document.fonts.ready.then(function(){document.documentElement.classList.add("fonts-loaded")});</script></head><body id="top" class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary py-space-xs px-margin"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-y-1 text-label-sm font-label-sm tracking-wide"><span class="">Henri Dunantlaan 62, Rijswijk</span><span class="hidden sm:inline">Tel: 070 - 229 0000</span><span class="">7 dagen per week geopend</span></div></div><div class="h-24 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Slagerij &amp; Supermarkt Dar Rif Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVj4hthk8EYSkh_5P57Q6Ug-A-54c9CqTaUZEni1zkOhknS759x2r6Jo8oZGTje1Lha-z6XV0NZ1VnDHsuqX9_UrFxqTAeFhb-Cqzw8-CThPAiCDmEmt4h0ezWUPjd1dTCRB3Ud48hp90t9GBZJnDv3dNlsG-1cd7xd8CppmA8qD9UGoiEjBn72kZ0kWlz9m68HKubEYuOcIpWhlv3fBbIc3tXGJXEIb1lTSE6P0WjiW9r37lxKtpYVWiNV-xuMVzuUo"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Dar Rif</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ambachtelijke Slagerij &amp; Supermarkt</span></div></div><nav class="hidden lg:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary font-semibold"><a aria-current="page" class="px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary font-semibold" data-path="home" href="#top">Home</a><a class="px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="over-ons" href="#over-ons">Over Ons</a><a class="px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ons-assortiment" href="#assortiment">Ons Assortiment</a><a class="px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="supermarkt" href="#supermarkt">Supermarkt</a><a class="px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="openingstijden-en-locatie" href="#locatie-openingstijden">Openingstijden &amp; Locatie</a></nav></div></header><main class="w-full bg-surface min-h-screen pt-32"><div class="flex flex-col w-full">
+<!-- Announcement Ribbon -->
+
+<!-- Hero Section (Strictly Informational, Clean & Fresh Atmosphere) -->
+<section class="relative w-full overflow-hidden bg-surface py-space-2xl px-margin">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left Column: Story & Direct Visit Triggers -->
+<div class="lg:col-span-6 flex flex-col items-start gap-space-lg">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider shadow-sm">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span class="">Ambachtelijke Kwaliteitsslagers • Rijswijk</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-none">
+            Ambachtelijk Vakmanschap &amp; <span class="text-primary italic">100% Halal</span> Kwaliteit
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Slagerij &amp; Supermarkt Dar Rif is uw vertrouwde adres voor dagvers kwaliteitsvlees, met zorg huisgemarineerde grillspecialiteiten en een rijk gevuld assortiment aan mediterrane levensmiddelen. Kom gerust langs en ervaar onze passie voor smaak en versheid.
+          </p>
+</div>
+<!-- Informative Only CTAs: No Order/Checkout Elements -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-primary text-on-primary font-title-lg text-title-lg shadow-md hover:bg-primary-container transition-colors" href="#assortiment">
+<span class="material-symbols-outlined text-[20px]">restaurant_menu</span>
+<span class="">Bekijk Assortiment</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-surface-container text-on-surface font-title-lg text-title-lg shadow-sm hover:bg-surface-container-high transition-colors" href="#locatie-openingstijden">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+<span class="">Route &amp; Tijden</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-md rounded-xl bg-surface-container-lowest text-primary font-title-lg text-title-lg shadow-sm hover:bg-surface-container transition-colors" href="tel:0702290000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span class="font-bold">070 - 229 0000</span>
+</a>
+</div>
+<!-- Trust Badges Under Hero -->
+<div class="pt-space-md grid grid-cols-3 gap-space-md w-full">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-title-lg text-title-lg text-primary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Halal Gecertificeerd</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-title-lg text-title-lg text-primary font-bold">7 Dagen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Per week geopend</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-title-lg text-title-lg text-primary font-bold">Dagelijks</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vers Gesneden Vlees</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Clean Butcher Counter Image Display -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
+<img alt="Sfeervolle en authentieke halal slagerij toonbank gevuld met dagvers lamsvlees, rundvlees en gevogelte bij Slagerij Dar Rif" class="w-full h-[480px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuI_8V3J-cZZnnqWKftZ0VLFgWYrsnfBkNtNydG2irPLsOW6jJcpoE3ElUV8jFjHXC8H8_b9kV8r9ixFNrBoQUBUVYtsXzT9kB0Dji1yIC6qSR4gWTB0oRpWpw8vSPI_AQlM-K-BdaIvatItxEu7XDxgOSOF57injM5noLXqlujwxdSETr42koyth-NX-c6RpAkOtE9Rf2hWfVFKhtc_fdWOp3OLwztW-88swuSdFvXh-hZAUvOXMIA">
+<div class="absolute bottom-0 inset-x-0 p-space-lg bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/50 to-transparent flex items-center justify-between text-inverse-on-surface">
+<div>
+<p class="font-headline-sm text-headline-sm text-on-primary">Onze Verse Toonbank</p>
+<p class="font-body-sm text-body-sm text-surface-variant">Henri Dunantlaan 62 • Kom persoonlijk kiezen</p>
+</div>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm">
+              Winkelbezoek
+            </span>
+</div>
+</div>
+<!-- Floating highlight badge -->
+<div class="hidden sm:flex absolute -bottom-6 -left-6 p-space-md rounded-xl bg-surface-container-lowest shadow-lg items-center gap-space-sm max-w-xs">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-lg text-title-lg text-on-surface leading-tight">Traditionele Snijkunst</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Op maat versneden door onze vakslagers</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visitor Information 3-Column Practical Bar -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop">
+<!-- Card 1: Locatie & Bereikbaarheid -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">pin_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Locatie</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Winkel &amp; Adres</h3>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-md text-body-md">
+<p class="font-bold text-on-surface">Henri Dunantlaan 62</p>
+<p class="">2286 GE Rijswijk (Zuid-Holland)</p>
+<p class="font-body-sm text-body-sm text-secondary pt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_parking</span>
+              Ruime parkeergelegenheid in directe omgeving
+            </p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:text-primary-container" href="#locatie-openingstijden">
+<span class="">Routebeschrijving bekijken</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2: Openingstijden -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Altijd Welkom</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Openingstijden</h3>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-md text-body-md">
+<p class="font-bold text-on-surface">Maandag t/m Zondag</p>
+<p class="text-tertiary-container font-bold text-title-lg">09:00 – 19:00 uur</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+              7 dagen per week non-stop geopend voor al uw dagverse boodschappen.
+            </p>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-bold">Vandaag geopend tot 19:00</span>
+</div>
+</div>
+<!-- Card 3: Klantenservice & Telefonisch Contact -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Vragen &amp; Advies</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Telefonisch Contact</h3>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-md text-body-md">
+<p class="font-body-sm text-body-sm">Vragen over speciale vleessnijdingen, voorraad of bereidingstips?</p>
+<a class="font-title-lg text-title-lg text-primary font-bold hover:underline" href="tel:0702290000">
+              070 - 229 0000
+            </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Onze slagers staan u graag direct te woord in de winkel.</p>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-primary font-bold hover:text-primary-container" href="tel:0702290000">
+<span class="">Direct bellen naar de winkel</span>
+<span class="material-symbols-outlined text-[16px]">phone_in_talk</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Kwaliteitsbelofte & Halal Garantie Section -->
+<section id="over-ons" class="w-full bg-surface py-space-2xl px-margin">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Onze Kwaliteitsstandaard</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Ambacht, Zuiverheid &amp; Eerlijke Smaak</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Bij Slagerij Dar Rif selecteren wij uitsluitend vee van gecertificeerde herkomst. Wij werken volgens strikte hygiëneregels en aloude tradities.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Highlight 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">100% Halal Gecertificeerd</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Strikte naleving en gegarandeerde halal slachting. Wij werken met respect voor dierenwelzijn en transparante herkomst.
+          </p>
+</div>
+<!-- Highlight 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="text-[24px] inline-flex items-center justify-center leading-none" role="img" aria-label="Mes">🔪</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dagvers Gesneden</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Elke ochtend vroeg bereiden en versnijden onze slagers mals rundvlees, sappig lamsvlees en vers gevogelte.
+          </p>
+</div>
+<!-- Highlight 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">soup_kitchen</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Huisgemaakte Marinades</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ambachtelijke kruidenmelanges volgens geheim familierecept. Zonder onnodige toevoegingen, vol pure smaak.
+          </p>
+</div>
+<!-- Highlight 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Persoonlijk Advies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Vraag onze slagers naar de beste bereidingswijze, baktijden of inspiratie voor uw tajine, barbecue of stoofgerecht.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Assortiment Showcase (Pure Informative Etalage - NO Ordering) -->
+<section class="w-full bg-surface-container-low py-space-2xl px-margin" id="assortiment">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Informatief Overzicht</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Vers in Onze Winkel Te Vinden</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Wij geloven in het fysiek uitzoeken van uw verse ingrediënten. Onderstaand een overzicht van ons dagelijks wisselende en vaste aanbod in de toonbank.
+          </p>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span class="">Geen webshop • Exclusief verkrijgbaar in onze fysieke winkel</span>
+</div>
+</div>
+<!-- Categories Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Category 1: Rundvlees -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover" alt="Vers ambachtelijk rundvlees op houten plank" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVKwtVyt3GhwAH_ACqv3nInN-PmV3rur9sxj23qLuNWZhFk_tpDFUd1_9UOSgnDXU3xIowKJP86FyApe3c_t-6zl5RjhQlMZjuGWmSkzQ5kL7ncTW3oXvfRF4vUh7qTFJwThwBc2RzoOjSAiDaW1vHBrgpfiPbx8u7WjcIOrpzyYHor2sFaIMSHjMpA1b94dy98NnG_ln2fe9XlWxaia8wD7jbBUCMjt1E37AvvTDwzdbdb_1KahxwqQ">
+<span class="absolute top-3 left-3 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+              Dagvers Rundvlees
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ambachtelijk Rundvlees</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Malse kwaliteitsstukken gerijpt voor optimale sappigheid en diepe smaak. Perfect voor de grillpan of oven.
+              </p>
+<ul class="mt-space-md space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Malse Biefstukken &amp; Kogelbiefstuk
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Gemarmerde Ribeye &amp; Entrecôte
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Rundergehakt &amp; Sucadelappen
+                </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<span class="">Dagprijs per kilo in winkel</span>
+<span class="font-bold text-primary">Op maat gesneden</span>
+</div>
+</div>
+</div>
+<!-- Category 2: Lamsvlees -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover" alt="Mals lamsvlees en lamsrack met rozemarijn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJsFOArK1ScLyQ-z9d0kyqznHGgiqSLJ5MgVzJT5en_ClyWKy_TJxu4HA9ISLD5XlLkWVe93SxQ4hJZUmn6IvL50uIBcQR6HyvwdNprYT5MDuZYglGpGNHgvToawqhjiNHxelzrsudcoO0MxzReKCy1n8wcsfFF8K97HX62_6SVpjS6P1sae_7PZkWfKKnks6TvVWtrXV_xGtlsyNo4DInlSJ810gJLz5v5azupbY0QSOdvYGjj27WEA">
+<span class="absolute top-3 left-3 px-space-sm py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm">
+              Specialiteit
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mals Lamsvlees</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Zacht en vol van smaak. Onmisbaar voor traditionele Marokkaanse tajines, couscous gerechten en feestelijke maaltijden.
+              </p>
+<ul class="mt-space-md space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Lamskoteletten &amp; Lamsrack
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Malse Lamsbout &amp; Schouder
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Tajine stoofvlees met &amp; zonder bot
+                </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<span class="">Dagverse levering</span>
+<span class="font-bold text-primary">Vraag advies</span>
+</div>
+</div>
+</div>
+<!-- Category 3: Gevogelte -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover" alt="Dagvers gevogelte en kipfilet op lichte schaal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXbsKRIc8rr0udWFcL3VXVAOfXrnX-ICOU29v6jLz6hflO3mvtqgJ35JIPTuUFCZTzP_EDsaiSyPYQgsNRf2tKkQ9AWYfgSg1g2f-ylYieHD2683AcMXj46E0P2ihCfGZoTo3-F69M8sBgUQrNWxMXFRjdIAGzFjJmqUB0BWM4Twrs7KYa8Y-uPShKwSFFxkWvzlZTqyCsdqBDVE43HhVho5e40bpulbpYqVFBE71nyCPENUeH5kZnIA">
+<span class="absolute top-3 left-3 px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold shadow-sm">
+              Altijd Vers
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dagvers Gevogelte</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                100% halal gecertificeerde kip en gevogelte. Zorgvuldig schoongemaakt, ontbeend en klaar voor al uw familierecepten.
+              </p>
+<ul class="mt-space-md space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Kipfilet &amp; Malse Kipdijfilet
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Hele soepkippen &amp; braadkuikens
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Kipvleugels &amp; Drumsticks
+                </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<span class="">Gegarandeerd mals</span>
+<span class="font-bold text-primary">Schoon &amp; geportioneerd</span>
+</div>
+</div>
+</div>
+<!-- Category 4: BBQ & Grill Specialiteiten -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-48 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover" alt="Huisgemarineerde merguez en kefta spiesen op slagerspapier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBip_wIibL5Het7Amp7YK8HHcEX8ObEwKTgo4m13ycmpUPiR6dZN78wzYJlb2OxVqEu3szxwa_94wZFXcA7prg3U3IBfScqMs4uqOFhkxpjg0rZaWsOn_b2s2oMp2cft_OfpcJcvAnsBYyY9yfrvI-wByeXc7Tgx2oD1crxVzQB_1F5VOSLotIRffoaxtL8tvttlNT1qkmHfjYv0OJPQ9zcJVJ7Hv8apoSjtMP7JFkaaPBFNOYSO8YbOQ">
+<span class="absolute top-3 left-3 px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+              Huisgemarineerd
+            </span>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">BBQ &amp; Grill Specialiteiten</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Kant-en-klaar gekruid met onze kenmerkende kruidenmarinades. Ideaal voor grill, barbecue of snelle doordeweekse maaltijd.
+              </p>
+<ul class="mt-space-md space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Huisgemaakte Merguez worstjes
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Gekruide Kefta &amp; Kebab spiesen
+                </li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Gemarineerde Kipspiesen &amp; Koteletten
+                </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<span class="">Huisrecept marinades</span>
+<span class="font-bold text-primary">Klaar voor de pan</span>
+</div>
+</div>
+</div>
+<!-- Category 5: Mediterrane Supermarkt -->
+<div id="supermarkt" class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col lg:col-span-2">
+<div class="h-48 bg-surface-container relative overflow-hidden">
+<img class="w-full h-full object-cover" alt="Marokkaans brood, olijfolie en mediterrane delicatessen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJbF8ACjx6whSQb1hzANM4FccmetVoX1_0G4dCA5c7zlhG0zYfTJE86PWVovHrsntSX3K7M6lDTuvH1MUid0k-vsXLa1BzzkRNvoVhoRi423riwu3MssXel8QMKuG1bGfppHWnyFzhZ-2zEfkok9-ep0PQ6CEc4Nz1tHeQhgW3bjgaybI0vO1dMOyqc2jxdXb1Vb9CUmN0DSwyVwaxKaEDio4dLJpyRHLgMFfzQRsXhtyEF5iTfKiC-w">
+
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mediterrane Levensmiddelen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Combineer uw vlees met onze rijke supermarktafdeling. Dagelijks vers gebakken Marokkaans brood, kwaliteitsolijfolie, verse munt en olijven.
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs mt-space-md font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Vers Marokkaans brood &amp; msemen
+                </div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Authentieke olijfolie uit Marokko
+                </div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Rijk assortiment thee &amp; losse kruiden
+                </div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check</span>
+                  Griekse &amp; Turkse kazen, yoghurt &amp; zuivel
+                </div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low p-space-sm rounded-lg">
+<span class="">Alles onder één dak in Rijswijk</span>
+<span class="font-bold text-primary">Dagelijks vers aangevuld</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Visiting Tips & Atmosphere Showcase (Editorial Intermezzo) -->
+<section class="w-full bg-surface py-space-xl px-margin">
+<div class="max-w-7xl mx-auto rounded-xl bg-surface-container-lowest p-space-xl shadow-md">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Ervaar Onze Winkelbeleving</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Waarom Langskomen in Rijswijk?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            U kiest zelf het formaat, de dikte en de snede van uw vlees. Onze slagers snijden ter plekke voor u af, marineren naar wens en adviseren u met veel plezier over de juiste bereiding en kerntemperatuur. Wij heten iedereen van harte welkom in onze overzichtelijke en schone zaak.
+          </p>
+<div class="flex flex-wrap gap-space-md pt-space-xs font-label-md text-label-md text-on-surface">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">favorite</span> Gastvrije service
+            </span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">clean_hands</span> Hoge hygiënestandaard
+            </span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[18px]">savings</span> Eerlijke en transparante prijzen
+            </span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-sm bg-surface-container-low p-space-lg rounded-xl">
+<span class="font-title-lg text-title-lg text-on-surface">Heeft u speciale wensen?</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Grote familiegelegenheid, bruiloft, offerfeest of barbecue partij? Neem vooraf telefonisch contact op of kom even langs bij de balie.
+          </p>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container" href="tel:0702290000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="">Bel 070 - 229 0000</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Route Section (No Mapbox/API keys needed - using Google Maps Static pipeline) -->
+<section class="w-full bg-surface-container-low py-space-2xl px-margin" id="locatie-openingstijden">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-start gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Locatie &amp; Bereikbaarheid</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Kom Langs in Onze Winkel in Rijswijk</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Ervaar de verse kwaliteit en gastvrijheid van Slagerij &amp; Supermarkt Dar Rif. Wij zijn gevestigd aan de Henri Dunantlaan met goede verbindingen via openbaar vervoer en auto.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left details panel -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Opening Hours Table Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Openingstijden</h3>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                7 Dagen Open
+              </span>
+</div>
+<div class="flex flex-col font-body-sm text-body-sm divide-none">
+<div class="flex justify-between py-1.5 text-on-surface font-semibold bg-surface-container-low px-space-sm rounded-lg">
+<span class="">Maandag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 px-space-sm text-on-surface-variant">
+<span class="">Dinsdag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 px-space-sm text-on-surface-variant bg-surface-container-low/50 rounded-lg">
+<span class="">Woensdag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 px-space-sm text-on-surface-variant">
+<span class="">Donderdag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 px-space-sm text-on-surface-variant bg-surface-container-low/50 rounded-lg">
+<span class="">Vrijdag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 px-space-sm text-on-surface-variant">
+<span class="">Zaterdag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+<div class="flex justify-between py-1.5 text-on-surface font-semibold bg-surface-container-low px-space-sm rounded-lg">
+<span class="">Zondag</span>
+<span class="">09:00 – 19:00</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+              Geen sluitingstijd tussen de middag. Doorlopend geopend voor uw gemak.
+            </p>
+</div>
+<!-- Travel & Parking Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<h4 class="font-title-lg text-title-lg text-on-surface">Bereikbaarheid</h4>
+<div class="flex items-start gap-space-sm pt-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">directions_car</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Met de Auto &amp; Parkeren</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Eenvoudig te bereiken via de A4 en Prinses Beatrixlaan. Er is voldoende parkeergelegenheid direct voor en rondom de winkel.
+                </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm pt-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">directions_bus</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Openbaar Vervoer</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Bus- en tramhaltes op enkele minuten loopafstand met regelmatige verbindingen naar Den Haag Centraal en Delft.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right map & navigation panel -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md h-full justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">place</span>
+<span class="font-title-lg text-title-lg text-on-surface font-bold">Dar Rif • Henri Dunantlaan 62</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2286 GE Rijswijk</span>
+</div>
+</div>
+<!-- Map display with data-location pipeline -->
+<iframe src="https://maps.google.com/maps?q=Henri+Dunantlaan+62,+2286+GE+Rijswijk&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="360" style="border: 0px; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[360px] rounded-lg shadow-inner"></iframe>
+<!-- Action buttons: Route plannen & Bellen (NO checkout/cart) -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-md rounded-xl bg-primary text-on-primary font-title-lg text-title-lg shadow-sm hover:bg-primary-container" href="https://maps.google.com/?q=Henri+Dunantlaan+62+Rijswijk" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">map</span>
+<span class="">Route plannen via Google Maps</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-md rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high" href="tel:0702290000">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+<span class="">Hulp nodig onderweg? 070 - 229 0000</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Warm Farewell / Walk-in Callout Banner -->
+<section class="w-full bg-surface py-space-xl px-margin">
+<div class="max-w-7xl mx-auto p-space-xl rounded-xl bg-gradient-to-r from-primary-container via-primary to-primary text-on-primary shadow-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<h3 class="font-headline-lg text-headline-lg text-on-primary">U bent van harte welkom!</h3>
+<p class="font-body-md text-body-md text-primary-fixed">
+          Geen bestelling nodig. Stap gerust binnen, proef de sfeer en neem dagelijks het beste en meest verse vlees van Rijswijk mee naar huis.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-xl bg-surface-container-lowest text-primary font-title-lg text-title-lg shadow-md hover:bg-surface-container" href="#locatie-openingstijden">
+<span class="material-symbols-outlined text-[20px]">store</span>
+<span class="">Bezoek Onze Zaak</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- DAR RIF EXPERIENCE ENHANCEMENTS -->
+<style>
+@keyframes darRifMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes darRifPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+.dr-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.dr-reveal.dr-visible{opacity:1;transform:none}
+.dr-marquee{overflow:hidden;white-space:nowrap}.dr-marquee-track{display:inline-flex;min-width:max-content;animation:darRifMarquee 32s linear infinite}.dr-marquee:hover .dr-marquee-track{animation-play-state:paused}
+.dr-product-img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}.dr-product:hover .dr-product-img{transform:scale(1.035)}
+.dr-panel{transition:flex .5s ease,filter .5s ease}.dr-panel:hover{flex:1.35}
+.dr-pattern{background-image:linear-gradient(45deg,rgba(200,155,60,.055) 25%,transparent 25%),linear-gradient(-45deg,rgba(200,155,60,.055) 25%,transparent 25%),linear-gradient(45deg,transparent 75%,rgba(200,155,60,.055) 75%),linear-gradient(-45deg,transparent 75%,rgba(200,155,60,.055) 75%);background-size:22px 22px;background-position:0 0,0 11px,11px -11px,-11px 0}
+.dr-advice{position:fixed;right:22px;bottom:22px;z-index:60}.dr-advice-panel{position:absolute;right:0;bottom:70px;width:min(360px,calc(100vw - 32px));display:none}.dr-advice.open .dr-advice-panel{display:block}
+</style>
+
+<section class="w-full bg-primary text-on-primary py-space-sm dr-marquee" aria-label="Vandaag bij Dar Rif">
+  <div class="dr-marquee-track font-label-md text-label-md tracking-widest uppercase">
+    <span class="px-8">Vandaag in de toonbank</span><span class="text-secondary-fixed">◆</span><span class="px-8">Lamskoteletten</span><span class="text-secondary-fixed">◆</span><span class="px-8">Huisgemaakte Merguez</span><span class="text-secondary-fixed">◆</span><span class="px-8">Ribeye</span><span class="text-secondary-fixed">◆</span><span class="px-8">Kipdij</span><span class="text-secondary-fixed">◆</span><span class="px-8">Kefta</span><span class="text-secondary-fixed">◆</span>
+    <span class="px-8">Vandaag in de toonbank</span><span class="text-secondary-fixed">◆</span><span class="px-8">Lamskoteletten</span><span class="text-secondary-fixed">◆</span><span class="px-8">Huisgemaakte Merguez</span><span class="text-secondary-fixed">◆</span><span class="px-8">Ribeye</span><span class="text-secondary-fixed">◆</span><span class="px-8">Kipdij</span><span class="text-secondary-fixed">◆</span><span class="px-8">Kefta</span><span class="text-secondary-fixed">◆</span>
+  </div>
+</section>
+
+<section class="w-full bg-surface py-space-2xl px-margin dr-reveal" id="gerecht-kiezer">
+ <div class="max-w-7xl mx-auto">
+  <div class="text-center max-w-2xl mx-auto mb-space-xl"><span class="font-label-sm text-secondary uppercase tracking-widest font-bold">Van idee naar avondeten</span><h2 class="font-headline-lg text-headline-lg mt-2">Wat gaat u vandaag maken?</h2><p class="text-on-surface-variant mt-2">Kies wat u wilt maken en krijg direct een compleet idee: aanbevolen vlees, ingrediënten, bereiding en een praktische tip van de slager.</p></div>
+  <div class="flex flex-wrap justify-center gap-2 mb-space-lg" id="dr-dish-buttons"></div>
+  <div class="grid lg:grid-cols-12 gap-gutter-desktop bg-surface-container-lowest border border-outline-variant/40 rounded-xl overflow-hidden shadow-sm">
+   <div class="lg:col-span-7 min-h-[350px] relative overflow-hidden"><img id="dr-dish-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJsFOArK1ScLyQ-z9d0kyqznHGgiqSLJ5MgVzJT5en_ClyWKy_TJxu4HA9ISLD5XlLkWVe93SxQ4hJZUmn6IvL50uIBcQR6HyvwdNprYT5MDuZYglGpGNHgvToawqhjiNHxelzrsudcoO0MxzReKCy1n8wcsfFF8K97HX62_6SVpjS6P1sae_7PZkWfKKnks6TvVWtrXV_xGtlsyNo4DInlSJ810gJLz5v5azupbY0QSOdvYGjj27WEA" alt="Vers vlees voor tajine" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div><p class="absolute left-8 bottom-7 text-white font-headline-md text-headline-md" id="dr-dish-visual">Tajine</p></div>
+   <div class="lg:col-span-5 p-space-xl flex flex-col justify-center"><span class="font-label-sm text-secondary uppercase tracking-widest font-bold">Van de slager naar uw keuken</span><h3 id="dr-dish-title" class="font-headline-lg text-headline-lg mt-2">Lamstajine met groenten</h3><p id="dr-dish-copy" class="text-on-surface-variant mt-3">Lamsschouder wordt tijdens langzaam garen heerlijk zacht en geeft veel smaak aan de saus.</p><div class="mt-5"><p class="font-label-sm text-primary uppercase tracking-wider font-bold">Dit heeft u nodig</p><p id="dr-dish-ingredients" class="mt-2 text-sm leading-6">Lamsschouder · ui · wortel · aardappel · knoflook · ras el hanout · olijfolie · verse kruiden</p></div><div class="mt-5"><p class="font-label-sm text-primary uppercase tracking-wider font-bold">Zo maakt u het</p><ol id="dr-dish-steps" class="mt-2 space-y-2 text-sm text-on-surface-variant"><li><b class="text-on-surface">1.</b> Kleur het vlees kort rondom aan.</li><li><b class="text-on-surface">2.</b> Voeg kruiden, ui en groenten toe.</li><li><b class="text-on-surface">3.</b> Laat rustig garen tot het vlees boterzacht is.</li></ol></div><div class="mt-5 p-4 rounded-lg bg-surface-container-low"><p class="font-label-md font-bold" id="dr-dish-tip">Slagerstip: laat de lamsschouder in royale stukken snijden.</p></div><a href="tel:0702290000" class="mt-5 inline-flex w-fit items-center gap-2 bg-primary text-white px-5 py-3 rounded-xl font-bold"><span class="material-symbols-outlined">call</span>Vraag naar het juiste vlees</a></div>
+  </div>
+ </div>
+</section>
+
+
+
+<section class="w-full bg-surface py-space-2xl px-margin dr-reveal">
+ <div class="max-w-7xl mx-auto"><div class="text-center mb-space-xl"><span class="font-label-sm text-secondary uppercase tracking-widest font-bold">De winkelervaring</span><h2 class="font-headline-lg text-headline-lg mt-2">Kiezen. Snijden. Adviseren.</h2></div>
+ <div class="flex flex-col md:flex-row gap-3 min-h-[430px]">
+  <article class="dr-panel flex-1 rounded-xl border border-outline-variant/40 p-space-xl flex flex-col justify-end relative overflow-hidden text-white"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVKwtVyt3GhwAH_ACqv3nInN-PmV3rur9sxj23qLuNWZhFk_tpDFUd1_9UOSgnDXU3xIowKJP86FyApe3c_t-6zl5RjhQlMZjuGWmSkzQ5kL7ncTW3oXvfRF4vUh7qTFJwThwBc2RzoOjSAiDaW1vHBrgpfiPbx8u7WjcIOrpzyYHor2sFaIMSHjMpA1b94dy98NnG_ln2fe9XlWxaia8wD7jbBUCMjt1E37AvvTDwzdbdb_1KahxwqQ" alt="Vlees kiezen aan de toonbank" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-black/55"></div><div class="relative"><span class="material-symbols-outlined text-primary text-[40px]">storefront</span><h3 class="font-headline-md text-headline-md mt-3">1. Kiezen</h3><p class="text-white/80 mt-2">Bekijk het vlees zelf en kies wat bij uw gerecht past.</p></div></article>
+  <article class="dr-panel flex-1 rounded-xl text-white p-space-xl flex flex-col justify-end relative overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJsFOArK1ScLyQ-z9d0kyqznHGgiqSLJ5MgVzJT5en_ClyWKy_TJxu4HA9ISLD5XlLkWVe93SxQ4hJZUmn6IvL50uIBcQR6HyvwdNprYT5MDuZYglGpGNHgvToawqhjiNHxelzrsudcoO0MxzReKCy1n8wcsfFF8K97HX62_6SVpjS6P1sae_7PZkWfKKnks6TvVWtrXV_xGtlsyNo4DInlSJ810gJLz5v5azupbY0QSOdvYGjj27WEA" alt="Vers vlees op maat gesneden" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-primary/70"></div><div class="relative"><span class="material-symbols-outlined text-secondary-fixed text-[40px]">restaurant</span><h3 class="font-headline-md text-headline-md mt-3">2. Snijden</h3><p class="text-white/80 mt-2">Uw vlees wordt ter plekke op maat versneden.</p></div></article>
+  <article class="dr-panel flex-1 rounded-xl text-white p-space-xl flex flex-col justify-end relative overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBip_wIibL5Het7Amp7YK8HHcEX8ObEwKTgo4m13ycmpUPiR6dZN78wzYJlb2OxVqEu3szxwa_94wZFXcA7prg3U3IBfScqMs4uqOFhkxpjg0rZaWsOn_b2s2oMp2cft_OfpcJcvAnsBYyY9yfrvI-wByeXc7Tgx2oD1crxVzQB_1F5VOSLotIRffoaxtL8tvttlNT1qkmHfjYv0OJPQ9zcJVJ7Hv8apoSjtMP7JFkaaPBFNOYSO8YbOQ" alt="Persoonlijk advies voor grill en bereiding" class="absolute inset-0 w-full h-full object-cover"><div class="absolute inset-0 bg-tertiary-container/75"></div><div class="relative"><span class="material-symbols-outlined text-secondary-fixed text-[40px]">forum</span><h3 class="font-headline-md text-headline-md mt-3">3. Adviseren</h3><p class="text-white/80 mt-2">Van tajine tot barbecue: vraag naar bereiding en kruiden.</p></div></article>
+ </div></div>
+</section>
+
+
+
+<section class="w-full bg-inverse-surface text-inverse-on-surface py-24 px-margin dr-reveal relative overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJbF8ACjx6whSQb1hzANM4FccmetVoX1_0G4dCA5c7zlhG0zYfTJE86PWVovHrsntSX3K7M6lDTuvH1MUid0k-vsXLa1BzzkRNvoVhoRi423riwu3MssXel8QMKuG1bGfppHWnyFzhZ-2zEfkok9-ep0PQ6CEc4Nz1tHeQhgW3bjgaybI0vO1dMOyqc2jxdXb1Vb9CUmN0DSwyVwaxKaEDio4dLJpyRHLgMFfzQRsXhtyEF5iTfKiC-w" alt="Mediterrane producten bij Dar Rif" class="absolute inset-0 w-full h-full object-cover opacity-25"><div class="absolute inset-0 bg-inverse-surface/75"></div><div class="max-w-7xl mx-auto text-center relative"><span class="font-label-sm text-secondary-fixed uppercase tracking-[.2em]">Henri Dunantlaan 62 · Rijswijk</span><h2 class="font-headline-lg text-[52px] leading-tight mt-4">Tot straks bij <em>Dar Rif.</em></h2><p class="max-w-xl mx-auto mt-4 text-inverse-on-surface/70">Kom binnen, kies aan de toonbank en laat u adviseren door onze slagers.</p><div class="flex flex-wrap justify-center gap-3 mt-8"><a href="https://maps.google.com/?q=Henri+Dunantlaan+62+Rijswijk" target="_blank" class="bg-primary text-white px-6 py-3 rounded-xl font-bold">Route naar de winkel</a><a href="tel:0702290000" class="bg-white text-primary px-6 py-3 rounded-xl font-bold">Bel 070 - 229 0000</a><a href="https://www.google.com/maps/search/?api=1&query=Slagerij%20Dar%20Rif%20Henri%20Dunantlaan%2062%20Rijswijk" target="_blank" rel="noopener noreferrer" class="bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl font-bold">Bekijk op Google Maps</a></div></div></section>
+
+<div class="dr-advice" id="dr-advice"><div class="dr-advice-panel bg-surface-container-lowest border border-outline-variant/50 rounded-xl shadow-2xl p-5"><div class="flex justify-between items-center"><div><span class="font-label-sm text-secondary uppercase">Persoonlijk advies</span><h3 class="font-headline-sm">Vraag onze slager</h3></div><button onclick="toggleDrAdvice()" aria-label="Sluiten">✕</button></div><p class="text-on-surface-variant mt-3 text-sm">Wat gaat u maken?</p><div class="grid grid-cols-2 gap-2 mt-3"><button onclick="setAdvice('tajine')" class="bg-surface-container p-3 rounded-lg">Tajine</button><button onclick="setAdvice('bbq')" class="bg-surface-container p-3 rounded-lg">BBQ</button><button onclick="setAdvice('stoof')" class="bg-surface-container p-3 rounded-lg">Stoof</button><button onclick="setAdvice('snel')" class="bg-surface-container p-3 rounded-lg">Snel</button></div><p id="dr-advice-result" class="mt-4 p-3 rounded-lg bg-primary/5 text-primary font-semibold">Kies hierboven een gerecht.</p><div class="mt-4 pt-4 border-t border-outline-variant/50"><p class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Direct persoonlijk advies</p><div class="grid grid-cols-2 gap-2"><a href="tel:0702290000" class="inline-flex items-center justify-center gap-2 bg-primary text-white px-3 py-3 rounded-lg font-bold text-sm"><span class="material-symbols-outlined text-[18px]">call</span>Bellen</a><a href="https://wa.me/31702290000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-tertiary-container text-white px-3 py-3 rounded-lg font-bold text-sm"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp</a></div></div></div><button onclick="toggleDrAdvice()" class="w-14 h-14 rounded-full bg-primary text-white shadow-xl flex items-center justify-center" aria-label="Vraag onze slager"><span class="material-symbols-outlined">support_agent</span></button></div>
+
+<script>
+(function(){
+ const dishImages={Tajine:'https://lh3.googleusercontent.com/aida-public/AB6AXuDJsFOArK1ScLyQ-z9d0kyqznHGgiqSLJ5MgVzJT5en_ClyWKy_TJxu4HA9ISLD5XlLkWVe93SxQ4hJZUmn6IvL50uIBcQR6HyvwdNprYT5MDuZYglGpGNHgvToawqhjiNHxelzrsudcoO0MxzReKCy1n8wcsfFF8K97HX62_6SVpjS6P1sae_7PZkWfKKnks6TvVWtrXV_xGtlsyNo4DInlSJ810gJLz5v5azupbY0QSOdvYGjj27WEA',BBQ:'https://lh3.googleusercontent.com/aida-public/AB6AXuBip_wIibL5Het7Amp7YK8HHcEX8ObEwKTgo4m13ycmpUPiR6dZN78wzYJlb2OxVqEu3szxwa_94wZFXcA7prg3U3IBfScqMs4uqOFhkxpjg0rZaWsOn_b2s2oMp2cft_OfpcJcvAnsBYyY9yfrvI-wByeXc7Tgx2oD1crxVzQB_1F5VOSLotIRffoaxtL8tvttlNT1qkmHfjYv0OJPQ9zcJVJ7Hv8apoSjtMP7JFkaaPBFNOYSO8YbOQ',Couscous:'https://lh3.googleusercontent.com/aida-public/AB6AXuDJsFOArK1ScLyQ-z9d0kyqznHGgiqSLJ5MgVzJT5en_ClyWKy_TJxu4HA9ISLD5XlLkWVe93SxQ4hJZUmn6IvL50uIBcQR6HyvwdNprYT5MDuZYglGpGNHgvToawqhjiNHxelzrsudcoO0MxzReKCy1n8wcsfFF8K97HX62_6SVpjS6P1sae_7PZkWfKKnks6TvVWtrXV_xGtlsyNo4DInlSJ810gJLz5v5azupbY0QSOdvYGjj27WEA',Oven:'https://lh3.googleusercontent.com/aida-public/AB6AXuDVKwtVyt3GhwAH_ACqv3nInN-PmV3rur9sxj23qLuNWZhFk_tpDFUd1_9UOSgnDXU3xIowKJP86FyApe3c_t-6zl5RjhQlMZjuGWmSkzQ5kL7ncTW3oXvfRF4vUh7qTFJwThwBc2RzoOjSAiDaW1vHBrgpfiPbx8u7WjcIOrpzyYHor2sFaIMSHjMpA1b94dy98NnG_ln2fe9XlWxaia8wD7jbBUCMjt1E37AvvTDwzdbdb_1KahxwqQ',Snel:'https://lh3.googleusercontent.com/aida-public/AB6AXuBip_wIibL5Het7Amp7YK8HHcEX8ObEwKTgo4m13ycmpUPiR6dZN78wzYJlb2OxVqEu3szxwa_94wZFXcA7prg3U3IBfScqMs4uqOFhkxpjg0rZaWsOn_b2s2oMp2cft_OfpcJcvAnsBYyY9yfrvI-wByeXc7Tgx2oD1crxVzQB_1F5VOSLotIRffoaxtL8tvttlNT1qkmHfjYv0OJPQ9zcJVJ7Hv8apoSjtMP7JFkaaPBFNOYSO8YbOQ'};
+ const dishes={
+ Tajine:['Lamstajine met groenten','Lamsschouder wordt tijdens langzaam garen heerlijk zacht en geeft veel smaak aan de saus.','Lamsschouder · ui · wortel · aardappel · knoflook · ras el hanout · olijfolie · verse kruiden',['Kleur het vlees kort rondom aan.','Voeg kruiden, ui en groenten toe.','Laat rustig garen tot het vlees boterzacht is.'],'Slagerstip: laat de lamsschouder in royale stukken snijden.'],
+ BBQ:['Gemengde Dar Rif grill','Combineer kefta en gemarineerde kip voor een makkelijke schaal vol verschillende grillsmaken.','Kefta · gemarineerde kip · paprika · rode ui · citroen · salade · brood',['Verwarm de grill of barbecue goed voor.','Grill de kip gaar en draai de kefta regelmatig.','Serveer samen met brood, salade en citroen.'],'Slagerstip: neem verschillende soorten zodat iedereen kan proeven.'],
+ Couscous:['Couscous met mals lamsvlees','Lamsbout of runderschenkel geeft de bouillon een volle smaak en wordt mooi zacht tijdens het garen.','Lamsvlees · couscous · wortel · courgette · kikkererwten · ui · kruiden',['Laat het vlees rustig trekken met ui en kruiden.','Voeg de groenten in etappes toe.','Stoom de couscous luchtig en serveer met bouillon.'],'Slagerstip: vraag naar vlees met bot voor extra smaak in de bouillon.'],
+ Oven:['Langzaam gegaarde lamsbout','Een feestelijk ovengerecht met een sappige lamsbout, knoflook en aromatische kruiden.','Lamsbout · knoflook · rozemarijn · olijfolie · aardappel · ui',['Kruid de lamsbout royaal en laat even intrekken.','Gaar langzaam in de oven met aardappel en ui.','Laat het vlees rusten voordat u het aansnijdt.'],'Slagerstip: laat de lamsbout vooraf netjes bijsnijden.'],
+ Snel:['Kipdij uit de hete pan','Een snelle maaltijd met sappige kipdijfilet die veel smaak houdt en in korte tijd klaar is.','Kipdijfilet · paprika · ui · knoflook · kruiden · brood of rijst',['Snijd groenten alvast klaar.','Bak de kipdij in een goed hete pan goudbruin en gaar.','Voeg groenten toe en serveer direct.'],'Slagerstip: kipdij blijft sappiger dan kipfilet bij bakken op hoge temperatuur.']};
+ const wrap=document.getElementById('dr-dish-buttons');
+ Object.keys(dishes).forEach((name,i)=>{const b=document.createElement('button');b.textContent=name;b.className='px-5 py-3 rounded-xl border font-bold transition '+(i===0?'bg-primary text-white border-primary':'bg-white border-outline-variant hover:border-primary');b.onclick=()=>{[...wrap.children].forEach(x=>x.className='px-5 py-3 rounded-xl border font-bold transition bg-white border-outline-variant hover:border-primary');b.className='px-5 py-3 rounded-xl border font-bold transition bg-primary text-white border-primary';document.getElementById('dr-dish-visual').textContent=name;document.getElementById('dr-dish-image').src=dishImages[name];document.getElementById('dr-dish-title').textContent=dishes[name][0];document.getElementById('dr-dish-copy').textContent=dishes[name][1];document.getElementById('dr-dish-ingredients').textContent=dishes[name][2];document.getElementById('dr-dish-steps').innerHTML=dishes[name][3].map((x,i)=>'<li><b class=\"text-on-surface\">'+(i+1)+'.</b> '+x+'</li>').join('');document.getElementById('dr-dish-tip').textContent=dishes[name][4]};wrap.appendChild(b)});
+ document.querySelectorAll('section img').forEach(img=>{img.classList.add('dr-product-img');const p=img.closest('.bg-surface-container-lowest');if(p)p.classList.add('dr-product')});
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('dr-visible')}),{threshold:.12});document.querySelectorAll('.dr-reveal').forEach(el=>io.observe(el));
+ const schedule=document.querySelector('header .bg-primary .max-w-7xl');if(schedule){const s=document.createElement('span');s.className='hidden md:inline-flex items-center gap-2';s.innerHTML='<i style="width:8px;height:8px;border-radius:999px;background:#9ac19a;display:inline-block;animation:darRifPulse 2s infinite"></i><b id="dr-open-status">Openingstijden laden…</b>';schedule.appendChild(s);const update=()=>{const d=new Date(),h=d.getHours()+d.getMinutes()/60,open=h>=9&&h<19;document.getElementById('dr-open-status').textContent=open?'Nu open · tot 19:00':'Gesloten · open vanaf 09:00'};update();setInterval(update,60000)}
+})();
+function toggleDrAdvice(){document.getElementById('dr-advice').classList.toggle('open')}
+function setAdvice(k){const a={tajine:'Voor tajine: vraag naar lamsschouder of stoofvlees.',bbq:'Voor BBQ: probeer kefta, merguez of gemarineerde kip.',stoof:'Voor stoof: runderschenkel of lamsschouder werkt mooi.',snel:'Voor snel: kipdijfilet of een op maat gesneden biefstuk.'};document.getElementById('dr-advice-result').textContent=a[k]}
+</script>
+</main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_10px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Dar Rif Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB15bkPZwcUorXMlxABRZ0GPBnH--pA6-WTImX52-aiQq0MgIg8sQCJJtfRqq7TsTNkuwB9dsj5_1rD6ylevSpOtouFHZ3ZXmOafOAxVGZuxVh3NIEpfxcDDT7HTW6fCfbW6UQ1HLqegrRDa5fOworreMvGO6N4nagX0jEf46J5miyiNk-llPyWX8gmbopn3yxRJwoSLf_kcnft-XUoW66P5QQ0sM8kBBAVPS4N0ldQKE8hWmdGkSYsADKm8UGR6ZbULqs"><span class="font-headline-sm text-headline-sm text-primary">Dar Rif</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Ambachtelijke halal slagerij en mediterrane supermarkt in Rijswijk. Dagelijks vers lamsvlees, rundvlees, gevogelte en authentieke streekproducten.</p><div class="flex items-center gap-space-xs text-tertiary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[18px]">verified</span><span class="">100% Halal Gecertificeerd</span></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface">Winkel &amp; Locatie</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Henri Dunantlaan 62<br>2286 GE Rijswijk<br>Nederland</p><p class="font-body-sm text-body-sm text-on-surface-variant">Tel: 070 - 229 0000</p></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface">Openingstijden</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Dagelijks<br><strong class="text-on-surface">09:00 - 19:00</strong></p></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-lg text-title-lg text-on-surface">Ambacht &amp; Kwaliteit</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Bij Slagerij Dar Rif staat respect voor herkomst, hygiëne en traditionele snijkunst centraal. Wij verwelkomen u graag in onze zaak voor persoonlijk advies en gastvrijheid.</p><div class="pt-space-xs"><span class="inline-block px-space-md py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-secondary-container">Traditie &amp; Versheid</span></div></div></div><div class="mt-space-2xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p class="">© 2026 Slagerij &amp; Supermarkt Dar Rif Rijswijk. Alle rechten voorbehouden.</p><div class="flex gap-space-md"><span class="">Puur Ambacht</span><span class="">Halal Kwaliteit</span><span class="">Rijswijk</span></div></div></div></footer>
+
+<script class="">
+window.switchLanguage = function(lang) {
+  var btnNl = document.getElementById('btn-lang-nl');
+  var btnEn = document.getElementById('btn-lang-en');
+  var activeClass = 'bg-surface-container-lowest font-bold text-primary shadow-[0_1px_4px_rgba(0,0,0,0.05)]';
+  var inactiveClass = 'text-on-surface-variant hover:text-on-surface';
+
+  if (btnNl && btnEn) {
+    if (lang === 'en') {
+      btnEn.className = 'px-space-sm py-0.5 rounded-lg font-label-sm text-label-sm ' + activeClass;
+      btnNl.className = 'px-space-sm py-0.5 rounded-lg font-label-sm text-label-sm ' + inactiveClass;
+      document.documentElement.lang = 'en';
+    } else {
+      btnNl.className = 'px-space-sm py-0.5 rounded-lg font-label-sm text-label-sm ' + activeClass;
+      btnEn.className = 'px-space-sm py-0.5 rounded-lg font-label-sm text-label-sm ' + inactiveClass;
+      document.documentElement.lang = 'nl';
+    }
+  }
+
+  var navLinks = document.querySelectorAll('header nav a');
+  if (navLinks.length >= 5) {
+    if (lang === 'en') {
+      navLinks[0].textContent = 'Home';
+      navLinks[1].textContent = 'About Us';
+      navLinks[2].textContent = 'Our Assortment';
+      navLinks[3].textContent = 'Supermarket';
+      navLinks[4].textContent = 'Hours & Location';
+    } else {
+      navLinks[0].textContent = 'Home';
+      navLinks[1].textContent = 'Over Ons';
+      navLinks[2].textContent = 'Ons Assortiment';
+      navLinks[3].textContent = 'Supermarket';
+      navLinks[4].textContent = 'Openingstijden & Locatie';
+    }
+  }
+
+  var heroTitle = document.querySelector('h1');
+  if (heroTitle) {
+    heroTitle.innerHTML = lang === 'en' 
+      ? 'Artisanal Craftsmanship & <span class="text-primary italic">100% Halal</span> Quality' 
+      : 'Ambachtelijk Vakmanschap & <span class="text-primary italic">100% Halal</span> Kwaliteit';
+  }
+
+  var heroSubtitle = document.querySelector('section p.font-body-lg');
+  if (heroSubtitle) {
+    heroSubtitle.textContent = lang === 'en'
+      ? 'Butchery & Supermarket Dar Rif is your trusted address for daily fresh quality meat, artisanally marinated barbecue specialties, and a rich Mediterranean grocery selection. Visit us and experience our true passion for freshness.'
+      : 'Slagerij & Supermarkt Dar Rif is uw vertrouwde adres voor dagvers kwaliteitsvlees, met zorg huisgemarineerde grillspecialiteiten en een rijk gevuld assortiment aan mediterrane levensmiddelen. Kom gerust langs en ervaar onze passie voor smaak en versheid.';
+  }
+
+  var ctas = document.querySelectorAll('section a[href="#assortiment"], section a[href="#locatie-openingstijden"]');
+  ctas.forEach(function(el) {
+    if (el.getAttribute('href') === '#assortiment') {
+      var span = el.querySelector('span:not(.material-symbols-outlined)');
+      if (span) span.textContent = lang === 'en' ? 'View Assortment' : 'Bekijk Assortiment';
+    }
+    if (el.getAttribute('href') === '#locatie-openingstijden') {
+      var span = el.querySelector('span:not(.material-symbols-outlined)');
+      if (span) span.textContent = lang === 'en' ? 'Directions & Hours' : 'Route & Tijden';
+    }
+  });
+
+  var topBarSchedule = document.querySelector('header span:last-child');
+  if (topBarSchedule && topBarSchedule.textContent.includes('geopend')) {
+    topBarSchedule.textContent = lang === 'en' ? 'Open daily: 09:00 - 19:00' : 'Dagelijks geopend: 09:00 - 19:00';
+  }
+
+  var visitBadge = document.querySelector('span.px-space-md.py-space-xs.rounded-full.bg-surface-container-lowest');
+  if (visitBadge) {
+    visitBadge.textContent = lang === 'en' ? 'Visit Store' : 'Winkelbezoek';
+  }
+
+  var calloutHeading = document.querySelector('h3.font-headline-lg.text-on-primary');
+  if (calloutHeading) {
+    calloutHeading.textContent = lang === 'en' ? 'You are most warmly welcome!' : 'U bent van harte welkom!';
+  }
+  var calloutBtn = document.querySelector('a[href="#locatie-openingstijden"] span:last-child');
+  if (calloutBtn && (calloutBtn.textContent.includes('Bezoek') || calloutBtn.textContent.includes('Visit'))) {
+    calloutBtn.textContent = lang === 'en' ? 'Visit Our Shop' : 'Bezoek Onze Zaak';
+  }
+};
+</script><nav class="dr-mobile-nav" aria-label="Mobiele snelkoppelingen">
+<a href="#assortiment"><span class="material-symbols-outlined">restaurant_menu</span><small>Assortiment</small></a>
+<a href="#gerecht-kiezer"><span class="material-symbols-outlined">skillet</span><small>Kookidee</small></a>
+<a href="tel:0702290000"><span class="material-symbols-outlined">call</span><small>Bellen</small></a>
+<a href="#locatie-openingstijden"><span class="material-symbols-outlined">location_on</span><small>Route</small></a>
+</nav>
+<style>
+.dr-mobile-nav{display:none}
+@media(max-width:767px){.dr-mobile-nav{position:fixed;display:grid;grid-template-columns:repeat(4,1fr);left:8px;right:8px;bottom:8px;height:58px;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border:1px solid #e8e6df;border-radius:14px;z-index:55;box-shadow:0 8px 28px rgba(31,36,33,.13);overflow:hidden}.dr-mobile-nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;color:#58413f;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif}.dr-mobile-nav .material-symbols-outlined{font-size:21px}.dr-mobile-nav small{font-size:9px;font-weight:700}.dr-mobile-nav a:active{background:#f0f5f0;color:#6a020a}}
+</style></body></html>
